@@ -1,0 +1,32 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: l2M3Ju4pDJy2BM2XMtcdbCikM3c=
+X-Android-APK-Signed: 2,3
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: GozLg/VK/eVSW47tEHccVg4ms4A=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: Br6xNsbYLFIighT+FGsY/cB14YM=
+
+Name: SDK/SDK30.tar.xz
+SHA1-Digest: S0yM1kYR1nI+oqTAacL3ckn00gg=
+
+Name: SDK/SDK31.tar.xz
+SHA1-Digest: vnn1oY4/8wTE7ts5wORMXELqehA=
+
+Name: SDK/SDK32.tar.xz
+SHA1-Digest: Gkn2n2pkoTPwoDuPy5wuVnPiqiU=
+
+Name: busybox-arm
+SHA1-Digest: an9WNUsDnhgDGvdpLVDQa+vfYfs=
+
+Name: e2fsck
+SHA1-Digest: PQyVoO0xFHeWeqiC5hhS6hNqCug=
+
+Name: installer.sh
+SHA1-Digest: 5xlWfJVSYVemMz/Z8yUD0RGxnj0=
+
+Name: resize2fs
+SHA1-Digest: SEgjLOn+USiMvSY7lRYO43PhXpg=
+

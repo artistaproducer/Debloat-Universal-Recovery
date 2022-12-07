@@ -1,0 +1,82 @@
+#!/sbin/sh
+#
+###########################################
+# File Name: update-binary
+# Last Updated: 2020, May 26
+###########################################
+##
+
+export ZIPFILE="$3"
+export OUTFD="/proc/self/fd/$2"
+export TMP="/tmp"
+
+case "$(uname -m)" in
+  *86*) export BINARCH="x86";; # e.g. Zenfone is i686
+  *ar*) export BINARCH="arm";; # i.e. armv7l and aarch64
+esac
+
+bb="$TMP/busybox-$BINARCH"
+l="$TMP/bin"
+
+setenforce 0
+
+ui_print() {
+  echo "ui_print $1" > "$OUTFD";
+  echo "ui_print" > "$OUTFD";
+}
+
+set_progress() { echo "set_progress $1" > "$OUTFD"; }
+
+#################
+set_progress 0.10;
+ui_print " ";
+ui_print "**************************************************";
+ui_print "*     --------------------------------------     *";
+ui_print "*     o-o   o--o o--o  o     o-o    O  o-O-o     *";
+ui_print "*     |  \  |    |   | |    o   o  / \   |       *";
+ui_print "*     |   O O-o  O--o  |    |   | o---o  |       *";
+ui_print "*     |  /  |    |   | |    o   o |   |  |       *";
+ui_print "*     o-o   o--o o--o  O---o o-o  o   o  o       *";
+ui_print "*     --------------------------------------     *";
+ui_print "*              Version 6 | @apmods               *";
+ui_print "**************************************************";
+ui_print "*                                                *";
+ui_print "*         Diman Ap on Spotify - Followme         *";
+ui_print "*                                                *";
+ui_print "**************************************************";
+sleep 4.0
+
+
+for f in busybox-arm e2fsck installer.sh resize2fs; do
+  unzip -o "$ZIPFILE" "$f" -d "$TMP";
+done
+
+for f in busybox-arm e2fsck installer.sh resize2fs; do
+  chmod +x "$TMP/$f";
+done
+
+# Preparing
+set_progress 0.20;
+if [ -e "$bb" ]; then
+  install -d "$l"
+  for i in $($bb --list); do
+    if ! ln -sf "$bb" "$l/$i" && ! $bb ln -sf "$bb" "$l/$i" && ! $bb ln -f "$bb" "$l/$i" ; then
+      # create script wrapper if symlinking and hardlinking failed because of restrictive selinux policy
+      if ! echo "#!$bb" > "$l/$i" || ! chmod +x "$l/$i" ; then
+        ui_print "ERROR 10: Failed to set-up pre-bundled busybox";
+        exit 1
+      fi
+    fi
+  done
+else
+  exit 1
+fi
+
+PATH="$l:$PATH" $bb ash "$TMP/installer.sh" "$@"
+  exit "$?"
+else
+  ui_print "ERROR 69: Wrong architecture to set-up pre-bundled busybox";
+  exit 1
+fi
+
+## Finished

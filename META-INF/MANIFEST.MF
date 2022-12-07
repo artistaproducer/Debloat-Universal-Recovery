@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Built-By: Generated-by-ADT
+Created-By: Android Gradle 3.5.0
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: sd4FuXXKJV4oQl43uqyapA4toXM=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: surH1Bs4hR30JclyYkFBB7d7164=
+
+Name: SDK/SDK30.tar.xz
+SHA1-Digest: tVdZrdu0l4sGz1UOs8GADxTa7jc=
+
+Name: SDK/SDK31.tar.xz
+SHA1-Digest: JOtDChgCOiH7AcrJn8KvyTHVq/M=
+
+Name: SDK/SDK32.tar.xz
+SHA1-Digest: CxiLW8WumA57SD+aruK/ebmC7W0=
+
+Name: busybox-arm
+SHA1-Digest: xIbVN3RZ9ropfMEiRWAbP1gIAgg=
+
+Name: e2fsck
+SHA1-Digest: c7SzT9QJpCARu5r26gNrvXeEe9Y=
+
+Name: installer.sh
+SHA1-Digest: Qk7WE1lDcGc0SwbxpUIOlqN4fUY=
+
+Name: resize2fs
+SHA1-Digest: wN6SXqKL1+XLF/RAi2wil1xp6XQ=
+
