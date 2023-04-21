@@ -197,15 +197,19 @@ debloater() {
 			rm -rf $SYSTEM_EXT/priv-app/PixelSetupWizard
 			rm -rf $SYSTEM_EXT/priv-app/SetupWizard
 		fi
-		#	rm -rf $SYSTEM/app/MIUIWeather
-		#	rm -rf $SYSTEM/app/MIUIWeatherGlobal
-		#	rm -rf $SYSTEM/app/Weather
-		#	rm -rf $SYSTEM/priv-app/MIUIWeatherGlobal
+		#rm -rf $PRODUCT/app/MIUIXiaomiAccount
+		#rm -rf $PRODUCT/app/XiaomiAccount
 		#rm -rf $PRODUCT/overlay/Monet*
 		#rm -rf $SYSTEM/app/Calculator
+		#rm -rf $SYSTEM/app/MIUIWeather
+		#rm -rf $SYSTEM/app/MIUIWeatherGlobal
+		#rm -rf $SYSTEM/app/MIUIXiaomiAccount
 		#rm -rf $SYSTEM/app/SogouInput
 		#rm -rf $SYSTEM/app/Stk
+		#rm -rf $SYSTEM/app/Weather
+		#rm -rf $SYSTEM/app/XiaomiAccount
 		#rm -rf $SYSTEM/priv-app/MIUIWeather
+		#rm -rf $SYSTEM/priv-app/MIUIWeatherGlobal
 		#rm -rf $SYSTEM/priv-app/Music
 		#rm -rf $SYSTEM/priv-app/Weather
 		rm -rf $PRODUCT/app/AiAsstVision
@@ -237,7 +241,6 @@ debloater() {
 		rm -rf $PRODUCT/app/MIUIReporter
 		rm -rf $PRODUCT/app/MIUISecurityInputMethod
 		rm -rf $PRODUCT/app/MIUISuperMarket
-		rm -rf $PRODUCT/app/MIUIXiaomiAccount
 		rm -rf $PRODUCT/app/MIpay
 		rm -rf $PRODUCT/app/Maps
 		rm -rf $PRODUCT/app/MiBugReport
@@ -255,7 +258,6 @@ debloater() {
 		rm -rf $PRODUCT/app/VoiceTrigger
 		rm -rf $PRODUCT/app/WellbeingPrebuilt
 		rm -rf $PRODUCT/app/XPerienceWallpapers
-		rm -rf $PRODUCT/app/XiaomiAccount
 		rm -rf $PRODUCT/app/YouTube
 		rm -rf $PRODUCT/app/aiasst_service
 		rm -rf $PRODUCT/app/arcore
@@ -353,7 +355,6 @@ debloater() {
 		rm -rf $SYSTEM/app/MIUISecurityInputMethod
 		rm -rf $SYSTEM/app/MIUIVideoPlaye
 		rm -rf $SYSTEM/app/MIUIVideoPlayer
-		rm -rf $SYSTEM/app/MIUIXiaomiAccount
 		rm -rf $SYSTEM/app/MSA
 		rm -rf $SYSTEM/app/MSA-Global
 		rm -rf $SYSTEM/app/MiBrowserGlobal
@@ -414,7 +415,6 @@ debloater() {
 		rm -rf $SYSTEM/app/XMCloudEngine
 		rm -rf $SYSTEM/app/XMSFKeeper
 		rm -rf $SYSTEM/app/XPeriaWeather
-		rm -rf $SYSTEM/app/XiaomiAccount
 		rm -rf $SYSTEM/app/XiaomiSimActivateService
 		rm -rf $SYSTEM/app/YTProMicrog
 		rm -rf $SYSTEM/app/YouDaoEngine
