@@ -771,55 +771,55 @@ debloater() {
 	set_progress 0.30
 }
 photo() {
-	rm -rf $PRODUCT/etc/sysconfig/google_exclusives_enable.xml
-	rm -rf $SYSTEM/etc/sysconfig/google_exclusives_enable.xml
-	rm -rf $SYSTEM/etc/sysconfig/Shift.xml
-	rm -rf $SYSTEM/etc/sysconfig/Notice
-	rm -rf $PRODUCT/etc/sysconfig/Shift.xml
-	rm -rf $PRODUCT/etc/sysconfig/Notice
-	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2019_midyear.xml
-	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2018.xml
-	rm -rf $PRODUCT/etc/sysconfig/pixel_2016_exclusive.xml
-	rm -rf $PRODUCT/etc/sysconfig/nga.xml
 	#rm -rf $PRODUCT/etc/sysconfig/nexus.xml
-	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2018_midyear.xml
+	rm -rf $PRODUCT/etc/sysconfig/Notice
+	rm -rf $PRODUCT/etc/sysconfig/Shift.xml
+	rm -rf $PRODUCT/etc/sysconfig/nga.xml
+	rm -rf $PRODUCT/etc/sysconfig/pixel_2016_exclusive.xml
 	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2017.xml
 	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2017_midyear.xml
+	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2018.xml
+	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2018_midyear.xml
 	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2019.xml
-	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2020_midyear.xml
+	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2019_midyear.xml
 	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2020.xml
-	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2021_midyear.xml
+	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2020_midyear.xml
 	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2021.xml
-	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2019_midyear.xml
-	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2018.xml
-	rm -rf $SYSTEM/etc/sysconfig/pixel_2016_exclusive.xml
-	rm -rf $SYSTEM/etc/sysconfig/nga.xml
+	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2021_midyear.xml
+	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2022.xml
+	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2022_midyear.xml
+	rm -rf $SYSTEM/etc/sysconfig/Notice
+	rm -rf $SYSTEM/etc/sysconfig/Shift.xml
+	rm -rf $SYSTEM/etc/sysconfig/google_exclusives_enable.xml
 	rm -rf $SYSTEM/etc/sysconfig/nexus.xml
-	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2018_midyear.xml
+	rm -rf $SYSTEM/etc/sysconfig/nga.xml
+	rm -rf $SYSTEM/etc/sysconfig/pixel_2016_exclusive.xml
 	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2017.xml
 	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2017_midyear.xml
+	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2018.xml
+	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2018_midyear.xml
 	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2019.xml
-	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2020_midyear.xml
+	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2019_midyear.xml
 	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2020.xml
-	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2021_midyear.xml
+	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2020_midyear.xml
 	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2021.xml
-	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2019_midyear.xml
-	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2018.xml
-	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_2016_exclusive.xml
-	rm -rf $SYSTEM_EXT/etc/sysconfig/nga.xml
+	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2021_midyear.xml
+	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2022.xml
 	rm -rf $SYSTEM_EXT/etc/sysconfig/nexus.xml
-	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2018_midyear.xml
+	rm -rf $SYSTEM_EXT/etc/sysconfig/nga.xml
+	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_2016_exclusive.xml
 	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2017.xml
 	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2017_midyear.xml
+	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2018.xml
+	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2018_midyear.xml
 	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2019.xml
-	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2020_midyear.xml
+	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2019_midyear.xml
 	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2020.xml
-	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2021_midyear.xml
+	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2020_midyear.xml
 	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2021.xml
-	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2022_midyear.xml
+	rm -rf $SYSTEM_EXT/etc/sysconfig/pixel_experience_2021_midyear.xml
+	rm -rf $PRODUCT/etc/sysconfig/google_exclusives_enable.xml
 	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2022_midyear.xml
-	rm -rf $PRODUCT/etc/sysconfig/pixel_experience_2022.xml
-	rm -rf $SYSTEM/etc/sysconfig/pixel_experience_2022.xml
 }
 ##descomprimiendo sdktotal
 herramientas() {
@@ -970,25 +970,24 @@ pl() {
 		if [ "$android_sdk" = 32 ]; then
 			ui_print "* - Instalando Pixel Launcher v11.6...           *"
 			echo -e "ro.boot.vendor.overlay.static=false" >>"$SYSTEM/build.prop"
-			rm -rf $PRODUCT/overlay/PixelLauncherCustomOverlay
-			rm -rf $PRODUCT/overlay/ThemedIconsOverlay
-			rm -rf $PRODUCT/overlay/PixelLauncherIconsOverlay
-			rm -rf $PRODUCT/overlay/PixelRecentsProvider
-			rm -rf $SYSTEM_EXT/priv-app/NexusLauncherRelease
+			rm -rf $PRODUCT/priv-app/ShadyQuickStep
 			rm -rf $PRODUCT/app/Lawnfeed
 			rm -rf $PRODUCT/app/Lawnicons
+			rm -rf $PRODUCT/overlay/PixelLauncherIconsOverlay
+			rm -rf $PRODUCT/overlay/PixelRecentsProvider
+			rm -rf $PRODUCT/overlay/ThemedIconsOverlay
+			rm -rf $PRODUCT/priv-app/NexusLauncherRelease
+			rm -rf $PRODUCT/priv-app/ParanoidQuickStep
+			rm -rf $PRODUCT/priv-app/TrebuchetQuickStep
 			rm -rf $SYSTEM/priv-app/AsusLauncherDev
 			rm -rf $SYSTEM/priv-app/Lawnchair
 			rm -rf $SYSTEM/priv-app/NexusLauncherPrebuilt
-			rm -rf $PRODUCT/priv-app/ParanoidQuickStep
-			rm -rf $PRODUCT//priv-app/ShadyQuickStep
-			rm -rf $PRODUCT/priv-app/TrebuchetQuickStep
-			rm -rf $PRODUCT/priv-app/NexusLauncherRelease
 			rm -rf $SYSTEM_EXT/priv-app/DerpLauncherQuickStep
+			rm -rf $SYSTEM_EXT/priv-app/Launcher3QuickStep
+			rm -rf $SYSTEM_EXT/priv-app/Lawnchair
 			rm -rf $SYSTEM_EXT/priv-app/NexusLauncherRelease
 			rm -rf $SYSTEM_EXT/priv-app/TrebuchetQuickStep
-			rm -rf $SYSTEM_EXT/priv-app/Lawnchair
-			rm -rf $SYSTEM_EXT/priv-app/Launcher3QuickStep
+			rm -rf $PRODUCT/overlay/PixelLauncherCustomOverlay
 			tar -xf "$CORE_DIR/SDKPL.tar.xz" -C $REMOVER_FOLDER
 			sys_list="$(find "$REMOVER_SYS" -mindepth 1 -type f | cut -d/ -f5-)"
 			sys_dir_list="$(find "$REMOVER_SYS" -mindepth 1 -type d | cut -d/ -f5-)"
@@ -1037,26 +1036,25 @@ pl() {
 		if [ "$android_sdk" = 33 ]; then
 			ui_print "* - Instalando Pixel Launcher v13...             *"
 			echo -e "ro.boot.vendor.overlay.static=false" >>"$SYSTEM/build.prop"
-			rm -rf $PRODUCT/overlay/PixelLauncherCustomOverlay
-			rm -rf $PRODUCT/overlay/ThemedIconsOverlay
-			rm -rf $PRODUCT/overlay/PixelLauncherIconsOverlay
-			rm -rf $PRODUCT/overlay/PixelRecentsProvider
-			rm -rf $SYSTEM_EXT/priv-app/NexusLauncherRelease
-			rm -rf $SYSTEM_EXT/priv-app/ThemePicker
+			rm -rf $PRODUCT/priv-app/ShadyQuickStep
 			rm -rf $PRODUCT/app/Lawnfeed
 			rm -rf $PRODUCT/app/Lawnicons
+			rm -rf $PRODUCT/overlay/PixelLauncherCustomOverlay
+			rm -rf $PRODUCT/overlay/PixelLauncherIconsOverlay
+			rm -rf $PRODUCT/overlay/PixelRecentsProvider
+			rm -rf $PRODUCT/overlay/ThemedIconsOverlay
+			rm -rf $PRODUCT/priv-app/NexusLauncherRelease
+			rm -rf $PRODUCT/priv-app/ParanoidQuickStep
+			rm -rf $PRODUCT/priv-app/TrebuchetQuickStep
 			rm -rf $SYSTEM/priv-app/AsusLauncherDev
 			rm -rf $SYSTEM/priv-app/Lawnchair
 			rm -rf $SYSTEM/priv-app/NexusLauncherPrebuilt
-			rm -rf $PRODUCT/priv-app/ParanoidQuickStep
-			rm -rf $PRODUCT//priv-app/ShadyQuickStep
-			rm -rf $PRODUCT/priv-app/TrebuchetQuickStep
-			rm -rf $PRODUCT/priv-app/NexusLauncherRelease
 			rm -rf $SYSTEM_EXT/priv-app/DerpLauncherQuickStep
-			rm -rf $SYSTEM_EXT/priv-app/NexusLauncherRelease
-			rm -rf $SYSTEM_EXT/priv-app/TrebuchetQuickStep
-			rm -rf $SYSTEM_EXT/priv-app/Lawnchair
 			rm -rf $SYSTEM_EXT/priv-app/Launcher3QuickStep
+			rm -rf $SYSTEM_EXT/priv-app/Lawnchair
+			rm -rf $SYSTEM_EXT/priv-app/NexusLauncherRelease
+			rm -rf $SYSTEM_EXT/priv-app/ThemePicker
+			rm -rf $SYSTEM_EXT/priv-app/TrebuchetQuickStep
 			tar -xf "$CORE_DIR/SDKPL13.tar.xz" -C $REMOVER_FOLDER
 
 			#ui_print "- Instalando mods en system..."
@@ -1114,14 +1112,21 @@ gboard() {
 	chmod 0755 $TMP/remover
 	unzip -o "$ZIPFILE" 'SDK/*' -d $TMP
 	ui_print "* - Instalando Gboard lite...                    *"
-	rm -rf $SYSTEM/app/LatinIMEGooglePrebuilt
-	rm -rf $PRODUCT/priv-app/LatinIME
-	rm -rf $PRODUCT/app/LatinIME
+	rm -rf $PRODUCT/app/GBoard
 	rm -rf $PRODUCT/app/LatinIME
 	rm -rf $PRODUCT/app/LatinIMEGooglePrebuilt
-	rm -rf $PRODUCT/app/GBoard
-	rm -rf $SYSTEM/lib64/libjni_latinimegoogle.so
 	rm -rf $PRODUCT/app/LatinImeGoogle
+	rm -rf $PRODUCT/priv-app/LatinIME
+	rm -rf $SYSTEM/app/LatinIMEGooglePrebuilt
+	rm -rf $PRODUCT/app/LatinIME
+	rm -rf $PRODUCT/app/EnhancedGboard
+	rm -rf $PRODUCT/app/GBoard
+	rm -rf $PRODUCT/app/LatinIME
+	rm -rf $PRODUCT/app/LatinIMEGooglePrebuilt
+	rm -rf $PRODUCT/app/LatinImeGoogle
+	rm -rf $PRODUCT/priv-app/LatinIME
+	rm -rf $SYSTEM/app/LatinIMEGooglePrebuilt
+	rm -rf $SYSTEM_EXT/app/LatinIMEGooglePrebuilt
 	tar -xf "$CORE_DIR/SDKG.tar.xz" -C $REMOVER_FOLDER
 	sys_list="$(find "$REMOVER_SYS" -mindepth 1 -type f | cut -d/ -f5-)"
 	sys_dir_list="$(find "$REMOVER_SYS" -mindepth 1 -type d | cut -d/ -f5-)"
