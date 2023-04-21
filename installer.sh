@@ -190,606 +190,360 @@ debloater() {
 	if [ -e $SYSTEM/app/miuisystem ] || [ -e $PRODUCT/app/MIUISystemUIPlugin ]; then
 		ui_print "* - Borrando apps en MIUI...                     *"
 		if [ -e /data/data/com.miui.core ]; then
-			rm -rf $PRODUCT/priv-app/SetupWizardPrebuilt
-			rm -rf $SYSTEM_EXT/priv-app/SetupWizard
-			rm -rf $SYSTEM_EXT/priv-app/PixelSetupWizard
-			rm -rf $PRODUCT/priv-app/SetupWizardPrebuilt
 			rm -rf $PRODUCT/priv-app/PixelSetupWizard
-			rm -rf $SYSTEM_EXT/priv-app/SetupWizard
-			rm -rf $SYSTEM/priv-app/SetupWizard
+			rm -rf $PRODUCT/priv-app/SetupWizard
 			rm -rf $PRODUCT/priv-app/SetupWizardPrebuilt
-			rm -rf $PRODUCT/priv-app/SetupWizard
-			rm -rf $SYSTEM_EXT/priv-app/SetupWizard
-			rm -rf $PRODUCT/priv-app/SetupWizard
-			rm -rf $SYSTEM_EXT/priv-app/SetupWizard
+			rm -rf $SYSTEM/priv-app/SetupWizard
 			rm -rf $SYSTEM_EXT/priv-app/PixelSetupWizard
+			rm -rf $SYSTEM_EXT/priv-app/SetupWizard
 		fi
-		rm -rf $SYSTEM/data-app/MIGalleryLockscreen
-		rm -rf $SYSTEM/data-app/MIGalleryLockscreenGlobal
-		rm -rf $SYSTEM/data-app/MIGalleryLockScreen
-		rm -rf $SYSTEM/data-app/MIGalleryLockScreenGlobal
-		rm -rf $SYSTEM/data-app/MIUISoundRecorderTargetSdk30
-		rm -rf $SYSTEM/data-app/MIUISoundRecorderTargetSdk30Global
-		rm -rf $SYSTEM/data-app/MIUISuperMarket
-		rm -rf $SYSTEM/data-app/MIUICompass
-		rm -rf $SYSTEM/data-app/MIUICompassGlobal
-		rm -rf $PRODUCT/priv-app/WellbeingPreBuilt
-		rm -rf $SYSTEM/priv-app/WellbeingPreBuilt
-		rm -rf $SYSTEM/app/CatchLog
-		rm -rf $SYSTEM/app/MiuiAudioMonitor
-		rm -rf $SYSTEM/priv-app/Backup
-		rm -rf $PRODUCT/app/AiAsstVision
-		rm -rf $PRODUCT/app/CarWith
-		rm -rf $PRODUCT/app/HybridPlatform
-		rm -rf $PRODUCT/app/HybridAccessory
-		rm -rf $PRODUCT/app/MiBugReport
-		rm -rf $SYSTEM/app/MiBugReport
-		rm -rf $PRODUCT/app/MINextpay
-		rm -rf $PRODUCT/app/MIpay
+		#	rm -rf $SYSTEM/app/MIUIWeather
+		#	rm -rf $SYSTEM/app/MIUIWeatherGlobal
+		#	rm -rf $SYSTEM/app/Weather
+		#	rm -rf $SYSTEM/priv-app/MIUIWeatherGlobal
 		#rm -rf $PRODUCT/overlay/Monet*
+		#rm -rf $SYSTEM/app/Calculator
+		#rm -rf $SYSTEM/app/SogouInput
+		#rm -rf $SYSTEM/app/Stk
+		#rm -rf $SYSTEM/priv-app/MIUIWeather
+		#rm -rf $SYSTEM/priv-app/Music
+		#rm -rf $SYSTEM/priv-app/Weather
+		rm -rf $PRODUCT/app/AiAsstVision
+		rm -rf $PRODUCT/app/AndroidAutoStub
+		rm -rf $PRODUCT/app/Backup
+		rm -rf $PRODUCT/app/CarWith
+		rm -rf $PRODUCT/app/Chrome
+		rm -rf $PRODUCT/app/Chrome-Stub
+		rm -rf $PRODUCT/app/CloudBackup
+		rm -rf $PRODUCT/app/DevicePolicyPrebuilt
+		rm -rf $PRODUCT/app/EmergencyInfo
+		rm -rf $PRODUCT/app/FM
+		rm -rf $PRODUCT/app/GlobalFashiongallery
+		rm -rf $PRODUCT/app/Gmail2
+		rm -rf $PRODUCT/app/GoogleAssistant
+		rm -rf $PRODUCT/app/GoogleFeedback
+		rm -rf $PRODUCT/app/GoogleOne
+		rm -rf $PRODUCT/app/GoogleOneTimeInitializer
+		rm -rf $PRODUCT/app/GooglePay
+		rm -rf $PRODUCT/app/GoogleRestore
+		rm -rf $PRODUCT/app/GoogleTTS
+		rm -rf $PRODUCT/app/HybridAccessory
+		rm -rf $PRODUCT/app/HybridPlatform
+		rm -rf $PRODUCT/app/MINextpay
 		rm -rf $PRODUCT/app/MITSMClient
 		rm -rf $PRODUCT/app/MIUIAiasstService
-		rm -rf $PRODUCT/app/MIUICloudService
-		rm -rf $PRODUCT/app/MiuiCit
 		rm -rf $PRODUCT/app/MIUICloudService
 		rm -rf $PRODUCT/app/MIUIMiCloudSync
 		rm -rf $PRODUCT/app/MIUIReporter
 		rm -rf $PRODUCT/app/MIUISecurityInputMethod
-		rm -rf $SYSTEM/app/MIUISecurityInputMethod
 		rm -rf $PRODUCT/app/MIUISuperMarket
-		rm -rf $PRODUCT/app/PaymentService
-		rm -rf $SYSTEM/app/XiaomiAccount
-		rm -rf $PRODUCT/app/XiaomiAccount
-		rm -rf $SYSTEM/app/MIUIXiaomiAccount
 		rm -rf $PRODUCT/app/MIUIXiaomiAccount
+		rm -rf $PRODUCT/app/MIpay
+		rm -rf $PRODUCT/app/Maps
+		rm -rf $PRODUCT/app/MiBugReport
+		rm -rf $PRODUCT/app/MiuiCit
+		rm -rf $PRODUCT/app/Notes
+		rm -rf $PRODUCT/app/OmniJaws
+		rm -rf $PRODUCT/app/PaymentService
+		rm -rf $PRODUCT/app/PrebuiltGmail
 		rm -rf $PRODUCT/app/SimActivateService
 		rm -rf $PRODUCT/app/SogouInput
+		rm -rf $PRODUCT/app/SpeechServicesByGoogle
+		rm -rf $PRODUCT/app/Velvet
+		rm -rf $PRODUCT/app/VoiceAssist
 		rm -rf $PRODUCT/app/VoiceAssistAndroidT
-		rm -rf $PRODUCT/data-app/MIUISoundRecorderTargetSdk30
 		rm -rf $PRODUCT/app/VoiceTrigger
+		rm -rf $PRODUCT/app/WellbeingPrebuilt
+		rm -rf $PRODUCT/app/XPerienceWallpapers
+		rm -rf $PRODUCT/app/XiaomiAccount
+		rm -rf $PRODUCT/app/YouTube
+		rm -rf $PRODUCT/app/aiasst_service
+		rm -rf $PRODUCT/app/arcore
+		rm -rf $PRODUCT/app/remoteSimLockAuthentication
+		rm -rf $PRODUCT/app/talkback
+		rm -rf $PRODUCT/app/uimremoteclient
+		rm -rf $PRODUCT/app/uimremoteserver
+		rm -rf $PRODUCT/data-app/Drive
+		rm -rf $PRODUCT/data-app/Duo
+		rm -rf $PRODUCT/data-app/GoogleNews
+		rm -rf $PRODUCT/data-app/MIUISoundRecorderTargetSdk30
+		rm -rf $PRODUCT/data-app/Photos
+		rm -rf $PRODUCT/data-app/Podcasts
+		rm -rf $PRODUCT/data-app/Videos
+		rm -rf $PRODUCT/data-app/YTMusic
+		rm -rf $PRODUCT/data-app/wps_lite
+		rm -rf $PRODUCT/priv-app/AndroidAutoStub
+		rm -rf $PRODUCT/priv-app/Backup
+		rm -rf $PRODUCT/priv-app/Chrome
+		rm -rf $PRODUCT/priv-app/CloudBackup
+		rm -rf $PRODUCT/priv-app/EmergencyInfo
+		rm -rf $PRODUCT/priv-app/GoogleAssistant
+		rm -rf $PRODUCT/priv-app/GoogleFeedback
+		rm -rf $PRODUCT/priv-app/GoogleOneTimeInitializer
+		rm -rf $PRODUCT/priv-app/GoogleRestore
+		rm -rf $PRODUCT/priv-app/GoogleRestorePrebuilt
+		rm -rf $PRODUCT/priv-app/HelpRtcPrebuilt
+		rm -rf $PRODUCT/priv-app/HotwordEnrollment*
 		rm -rf $PRODUCT/priv-app/MIService
 		rm -rf $PRODUCT/priv-app/MIShare
 		rm -rf $PRODUCT/priv-app/MIUIBrowser
 		rm -rf $PRODUCT/priv-app/MIUICloudBackup
 		rm -rf $PRODUCT/priv-app/MIUIMusicT
 		rm -rf $PRODUCT/priv-app/MIUIQuickSearchBox
-		rm -rf $PRODUCT/priv-app/MIUIYellowPage
 		rm -rf $PRODUCT/priv-app/MIUIVideo
-		rm -rf $PRODUCT/data-app/GoogleNews
-		rm -rf $PRODUCT/data-app/Podcasts
-		rm -rf $PRODUCT/data-app/Videos
-		rm -rf $PRODUCT/data-app/wps_lite
-		rm -rf $PRODUCT/data-app/YTMusic
-		rm -rf $SYSTEM/data-app/MIMediaEditorGlobal
-		rm -rf $SYSTEM/app/MIUIVideoPlaye
-		rm -rf $SYSTEM/app/MIUIVideoPlayer
-		rm -rf $SYSTEM/app/MIUIMusicGlobal
-		rm -rf $SYSTEM/app/MiuiGalleryGlobalExplore
-		rm -rf $SYSTEM/app/Compass
-		rm -rf $SYSTEM/priv-app/SoundRecorderTargetSdk30
-		rm -rf $SYSTEM/app/SolidExplorerUnlocker
-		rm -rf $SYSTEM/app/MiFitness
-		rm -rf $SYSTEM/app/SolidExplorer
-		rm -rf $SYSTEM/app/YoutubeVanced
-		rm -rf $SYSTEM/app/CovenantBR
-		rm -rf $SYSTEM/priv-app/MusicFX
-		rm -rf $SYSTEM/app/MiRadio
-		rm -rf $SYSTEM/app/Turbo
-		rm -rf $SYSTEM/priv-app/Turbo
-		rm -rf $SYSTEM/app/Email
-		rm -rf $SYSTEM/app/Videos
-		rm -rf $SYSTEM/priv-app/Videos
-		rm -rf $SYSTEM/app/Videos
-		rm -rf $SYSTEM/app/VideoPlayer
-		rm -rf $SYSTEM/priv-app/Videos
-		rm -rf $SYSTEM/app/Videos
-		rm -rf $SYSTEM/priv-app/Videos
-		rm -rf $SYSTEM/priv-app/MiuiVideo
-		rm -rf $SYSTEM/priv-app/MiuiMusic
-		#rm -rf $SYSTEM/priv-app/Music
-		rm -rf $SYSTEM/app/YTProMicrog
-		rm -rf $SYSTEM/app/PrintSpooler
-		rm -rf $SYSTEM/app/MIRadioGlobalBuiltin
-		rm -rf $SYSTEM/app/MiuiScanner
-		rm -rf $SYSTEM_EXT/priv-app/EmergencyInfo
-		#	rm -rf $SYSTEM/app/MIUIWeatherGlobal
-		#rm -rf $SYSTEM/priv-app/MIUIWeather
-		#rm -rf $SYSTEM/priv-app/Weather
-		#	rm -rf $SYSTEM/app/MIUIWeather
-		#	rm -rf $SYSTEM/app/Weather
-		#	rm -rf $SYSTEM/priv-app/MIUIWeatherGlobal
-		rm -rf $PRODUCT/priv-app/HotwordEnrollmentOKGoogleHEXAGON
-		rm -rf $SYSTEM/priv-app/MIUISoundRecorderTargetSdk30Global
-		rm -rf $PRODUCT/data-app/Drive
-		rm -rf $PRODUCT/data-app/Photos
-		rm -rf $PRODUCT/data-app/Duo
-		rm -rf $SYSTEM/priv-app/MIUIYellowPageGlobal
-		rm -rf $SYSTEM/data-app/MiCreditInStub
-		rm -rf $SYSTEM/data-app/XMRemoteController
-		rm -rf $SYSTEM/data-app/MIGalleryLockScreenGlobal
-		rm -rf $SYSTEM/data-app/MIBrowserGlobal
-		rm -rf $PRODUCT/priv-app/HotwordEnrollmentXGoogleHEXAGON
-		rm -rf $PRODUCT/app/SpeechServicesByGoogle
-		rm -rf $SYSTEM/priv-app/MIShareGlobal
-		rm -rf $SYSTEM/priv-app/MIService
-		rm -rf $SYSTEM/app/MiuiPrintSpoolerBeta
-		rm -rf $SYSTEM/app/MIUINotes
-		rm -rf $SYSTEM/app/MIUICompassGlobal
-		rm -rf $SYSTEM/app/MIDrop
-		rm -rf $SYSTEM/app/YouTube
-		rm -rf $SYSTEM/priv-app/YouTube
-		rm -rf $SYSTEM/app/YouTube
-		rm -rf $SYSTEM/priv-app/YouTube
-		rm -rf $SYSTEM/app/YouTube
-		rm -rf $SYSTEM/priv-app/YouTube
-		rm -rf $PRODUCT/app/YouTube
-		rm -rf $PRODUCT/priv-app/YouTube
-		rm -rf $PRODUCT/app/YouTube
-		rm -rf $PRODUCT/priv-app/YouTube
-		rm -rf $PRODUCT/app/YouTube
-		rm -rf $PRODUCT/priv-app/YouTube
-		rm -rf $SYSTEM/app/AiAsstVision
-		rm -rf $SYSTEM/app/AnalyticsCore
-		rm -rf $SYSTEM/app/facebook
-		rm -rf $SYSTEM/app/FrequentPhrase
-		rm -rf $SYSTEM/app/Health
-		rm -rf $SYSTEM/app/HybridAccessory
-		rm -rf $SYSTEM/app/HybridPlatform
-		rm -rf $SYSTEM/app/KSICibaEngine
-		rm -rf $SYSTEM/app/InMipay
-		rm -rf $SYSTEM/app/Joyose
-		rm -rf $SYSTEM/app/Lens
-		rm -rf $SYSTEM/app/mab
-		rm -rf $SYSTEM/app/MiGalleryLockscreen
-		rm -rf $SYSTEM/app/MiuiBugReport
-		rm -rf $SYSTEM/app/MiuiCompass
-		rm -rf $SYSTEM/app/MiuiDaemon
-		rm -rf $SYSTEM/app/MiuiFrequentPhrase
-		rm -rf $SYSTEM/app/MiuiGalleryLockscreen
-		rm -rf $SYSTEM/app/MSA
-		rm -rf $SYSTEM/app/NextPay
-		rm -rf $SYSTEM/app/MINextPay
-		rm -rf $SYSTEM/app/Notes
-		rm -rf $SYSTEM/app/PlayAutoInstallStubApp
-		rm -rf $SYSTEM/app/VoiceAssistant
-		rm -rf $SYSTEM/app/VoiceTrigger
-		rm -rf $SYSTEM/app/WMServices
-		rm -rf $SYSTEM/app/wps-lite
-		rm -rf $SYSTEM/app/XMSFKeeper
-		rm -rf $SYSTEM/app/YouDaoEngine
-		rm -rf $SYSTEM/data-app/Gmail2
-		rm -rf $SYSTEM/data-app/MiRemote
-		rm -rf $SYSTEM/data-app/ShareMe
-		rm -rf $SYSTEM/etc/yellowpage
-		rm -rf $SYSTEM/priv-app/Browser
-		rm -rf $SYSTEM/priv-app/facebook
-		rm -rf $SYSTEM/priv-app/GlobalMinusScreen
-		rm -rf $SYSTEM/priv-app/MiBrowser
-		rm -rf $SYSTEM/priv-app/MiDrop
-		rm -rf $SYSTEM/priv-app/MiGame
-		rm -rf $SYSTEM/priv-app/MiMover
-		rm -rf $SYSTEM/priv-app/MiService
-		rm -rf $SYSTEM/priv-app/MiShare
-		rm -rf $SYSTEM/priv-app/MiuiBrowser
-		rm -rf $SYSTEM/priv-app/MiuiHealth
-		rm -rf $SYSTEM/priv-app/MiuiScanner
-		rm -rf $SYSTEM/priv-app/PartnerBookmarksProvider
-		rm -rf $SYSTEM/priv-app/SoundRecorder
-		rm -rf $SYSTEM/priv-app/YellowPage
-		rm -rf $PRODUCT/app/GooglePay
-		rm -rf $PRODUCT/priv-app/GoogleRestorePrebuilt
-		rm -rf $SYSTEM_EXT/priv-app/Leaflet
-		rm -rf $PRODUCT/app/talkback
-		rm -rf $PRODUCT/app/GoogleTTS
-		rm -rf $PRODUCT/app/DevicePolicyPrebuilt
-		rm -rf $PRODUCT/priv-app/NovaBugreportWrapper
-		rm -rf $SYSTEM_EXT/app/Papers
-		rm -rf $PRODUCT/app/OmniJaws
-		rm -rf $PRODUCT/app/XPerienceWallpapers
-		rm -rf $SYSTEM/app/Yunikon
-		rm -rf $SYSTEM/app/XPeriaWeather
-		rm -rf $SYSTEM/system/product/priv-app/QtiSoundRecorder
-		rm -rf $SYSTEM/app/AbleMusic
-		rm -rf $PRODUCT/priv-app/Velvet
-		rm -rf $REMOVER_PR/etc
-		rm -rf $PRODUCT/app/Velvet
-		rm -rf $PRODUCT/priv-app/Velvet
-		rm -rf $SYSTEM/priv-app/Velvet
-		rm -rf $SYSTEM/app/Velvet
-		rm -rf $PRODUCT/app/PrebuiltGmail
-		rm -rf $PRODUCT/app/Chrome-Stub
-		rm -rf $PRODUCT/app/Chrome
-		rm -rf $PRODUCT/priv-app/Chrome
-		rm -rf $PRODUCT/app/arcore
-		rm -rf $SYSTEM/app/arcore
-		rm -rf $SYSTEM/priv-app/arcore
-		rm -rf $PRODUCT/priv-app/arcore
-		rm -rf $PRODUCT/priv-app/WellbeingPrebuilt
-		rm -rf $PRODUCT/app/WellbeingPrebuilt
-		rm -rf $SYSTEM/app/WellbeingPrebuilt
-		rm -rf $SYSTEM/priv-app/WellbeingPrebuilt
-		rm -rf $SYSTEM/app/Notes
-		rm -rf $SYSTEM/priv-app/Notes
-		rm -rf $SYSTEM/app/Notes
-		rm -rf $SYSTEM/priv-app/Notes
-		rm -rf $SYSTEM/app/Notes
-		rm -rf $SYSTEM/priv-app/Notes
-		rm -rf $PRODUCT/app/Notes
+		rm -rf $PRODUCT/priv-app/MIUIYellowPage
 		rm -rf $PRODUCT/priv-app/Notes
+		rm -rf $PRODUCT/priv-app/NovaBugreportWrapper
+		rm -rf $PRODUCT/priv-app/Velvet
+		rm -rf $PRODUCT/priv-app/Wellbeing
+		rm -rf $PRODUCT/priv-app/WellbeingPreBuilt
+		rm -rf $PRODUCT/priv-app/WellbeingPrebuilt
+		rm -rf $PRODUCT/priv-app/YouTube
+		rm -rf $PRODUCT/priv-app/arcore
+		rm -rf $PRODUCT/priv-app/ims
+		rm -rf $SYSTEM/app/AbleMusic
 		rm -rf $SYSTEM/app/AiAsstVision
 		rm -rf $SYSTEM/app/AnalyticsCore
+		rm -rf $SYSTEM/app/AndroidAutoStub
+		rm -rf $SYSTEM/app/AntHalService
+		rm -rf $SYSTEM/app/Backup
+		rm -rf $SYSTEM/app/BasicDreams
 		rm -rf $SYSTEM/app/BookmarkProvider
+		rm -rf $SYSTEM/app/Browser
+		rm -rf $SYSTEM/app/BugReport
 		rm -rf $SYSTEM/app/BuiltInPrintService
-		#rm -rf $SYSTEM/app/Calculator
+		rm -rf $SYSTEM/app/CalculatorGlobalStub
 		rm -rf $SYSTEM/app/CarrierDefaultApp
+		rm -rf $SYSTEM/app/CatchLog
 		rm -rf $SYSTEM/app/Cit
+		rm -rf $SYSTEM/app/CloudPrint2
 		rm -rf $SYSTEM/app/CloudService
-		rm -rf $SYSTEM/app/com.miui.qr
-		rm -rf $SYSTEM/app/com.xiaomi.macro
+		rm -rf $SYSTEM/app/CloudServiceSysbase
+		rm -rf $SYSTEM/app/Compass
+		rm -rf $SYSTEM/app/CompassGlobalStub
+		rm -rf $SYSTEM/app/CovenantBR
 		rm -rf $SYSTEM/app/EasterEgg
-		rm -rf $SYSTEM/app/facebook-appmanager
+		rm -rf $SYSTEM/app/Email
+		rm -rf $SYSTEM/app/EmergencyInfo
 		rm -rf $SYSTEM/app/FidoAuthen
 		rm -rf $SYSTEM/app/FidoClient
+		rm -rf $SYSTEM/app/FrequentPhrase
+		rm -rf $SYSTEM/app/GoogleAssistant
+		rm -rf $SYSTEM/app/GoogleFeedback
+		rm -rf $SYSTEM/app/GoogleOneTimeInitializer
 		rm -rf $SYSTEM/app/GooglePrintRecommendationService
-		rm -rf $SYSTEM/app/greenguard
+		rm -rf $SYSTEM/app/GoogleRestore
 		rm -rf $SYSTEM/app/Health
+		rm -rf $SYSTEM/app/HotwordEnrollmentOKGoogleWCD9340
+		rm -rf $SYSTEM/app/HotwordEnrollmentXGoogleWCD9340
 		rm -rf $SYSTEM/app/HybridAccessory
 		rm -rf $SYSTEM/app/HybridPlatform
 		rm -rf $SYSTEM/app/IdMipay
 		rm -rf $SYSTEM/app/InMipay
 		rm -rf $SYSTEM/app/Joyose
+		rm -rf $SYSTEM/app/KSICibaEngine
 		rm -rf $SYSTEM/app/Lens
 		rm -rf $SYSTEM/app/LiveWallpapersPicker
-		rm -rf $SYSTEM/app/mab
-		rm -rf $SYSTEM/app/mi_connect_service
+		rm -rf $SYSTEM/app/MIDrop
+		rm -rf $SYSTEM/app/MINextPay
+		rm -rf $SYSTEM/app/MIRadioGlobalBuiltin
+		rm -rf $SYSTEM/app/MIUICompassGlobal
+		rm -rf $SYSTEM/app/MIUIMusicGlobal
+		rm -rf $SYSTEM/app/MIUINotes
+		rm -rf $SYSTEM/app/MIUISecurityInputMethod
+		rm -rf $SYSTEM/app/MIUIVideoPlaye
+		rm -rf $SYSTEM/app/MIUIVideoPlayer
+		rm -rf $SYSTEM/app/MIUIXiaomiAccount
+		rm -rf $SYSTEM/app/MSA
+		rm -rf $SYSTEM/app/MSA-Global
+		rm -rf $SYSTEM/app/MiBrowserGlobal
+		rm -rf $SYSTEM/app/MiBugReport
 		rm -rf $SYSTEM/app/MiCloudSync
+		rm -rf $SYSTEM/app/MiDrive
+		rm -rf $SYSTEM/app/MiDropStub
+		rm -rf $SYSTEM/app/MiFitness
 		rm -rf $SYSTEM/app/MiGalleryLockscreen
-		rm -rf $SYSTEM/app/Mipay
+		rm -rf $SYSTEM/app/MiMoverGlobal
 		rm -rf $SYSTEM/app/MiPicks
 		rm -rf $SYSTEM/app/MiPlayClient
+		rm -rf $SYSTEM/app/MiRadio
+		rm -rf $SYSTEM/app/Mipay
 		rm -rf $SYSTEM/app/MiuiAccessibility
+		rm -rf $SYSTEM/app/MiuiAudioMonitor
+		rm -rf $SYSTEM/app/MiuiBrowserGlobal
 		rm -rf $SYSTEM/app/MiuiBugReport
 		rm -rf $SYSTEM/app/MiuiCompass
 		rm -rf $SYSTEM/app/MiuiDaemon
-		rm -rf $SYSTEM/app/MSA
-		rm -rf $SYSTEM/app/MSA-Global
+		rm -rf $SYSTEM/app/MiuiFreeformService
+		rm -rf $SYSTEM/app/MiuiFrequentPhrase
+		rm -rf $SYSTEM/app/MiuiGalleryGlobalExplore
+		rm -rf $SYSTEM/app/MiuiGalleryLockscreen
+		rm -rf $SYSTEM/app/MiuiPrintSpoolerBeta
+		rm -rf $SYSTEM/app/MiuiScanner
 		rm -rf $SYSTEM/app/Netflix_activation
 		rm -rf $SYSTEM/app/NextPay
 		rm -rf $SYSTEM/app/Notes
+		rm -rf $SYSTEM/app/NotesGlobalStub
+		rm -rf $SYSTEM/app/OneTimeInitializer
 		rm -rf $SYSTEM/app/OsuLogin
 		rm -rf $SYSTEM/app/PartnerBookmarksProvider
 		rm -rf $SYSTEM/app/PaymentService
+		rm -rf $SYSTEM/app/PersonalAssistant
+		rm -rf $SYSTEM/app/PersonalAssistantGlobal
 		rm -rf $SYSTEM/app/PlayAutoInstallStubApp
 		rm -rf $SYSTEM/app/PrintRecommendationService
-		#rm -rf $SYSTEM/app/SogouInput
-		#rm -rf $SYSTEM/app/Stk
+		rm -rf $SYSTEM/app/PrintSpooler
+		rm -rf $SYSTEM/app/SolidExplorer
+		rm -rf $SYSTEM/app/SolidExplorerUnlocker
+		rm -rf $SYSTEM/app/TSMClient
 		rm -rf $SYSTEM/app/TouchAssistant
 		rm -rf $SYSTEM/app/Traceur
 		rm -rf $SYSTEM/app/TranslationService
-		rm -rf $SYSTEM/app/TSMClient
+		rm -rf $SYSTEM/app/Turbo
 		rm -rf $SYSTEM/app/UPTsmService
+		rm -rf $SYSTEM/app/Velvet
+		rm -rf $SYSTEM/app/VideoPlayer
+		rm -rf $SYSTEM/app/Videos
 		rm -rf $SYSTEM/app/VoiceAssist
+		rm -rf $SYSTEM/app/VoiceAssistant
+		rm -rf $SYSTEM/app/VoiceTrigger
 		rm -rf $SYSTEM/app/VsimCore
 		rm -rf $SYSTEM/app/WAPPushManager
-		rm -rf $SYSTEM/app/wps_lite
-		rm -rf $SYSTEM/app/XiaomiSimActivateService
+		rm -rf $SYSTEM/app/WMServices
+		rm -rf $SYSTEM/app/WellbeingPrebuilt
 		rm -rf $SYSTEM/app/XMCloudEngine
 		rm -rf $SYSTEM/app/XMSFKeeper
+		rm -rf $SYSTEM/app/XPeriaWeather
+		rm -rf $SYSTEM/app/XiaomiAccount
+		rm -rf $SYSTEM/app/XiaomiSimActivateService
+		rm -rf $SYSTEM/app/YTProMicrog
 		rm -rf $SYSTEM/app/YouDaoEngine
+		rm -rf $SYSTEM/app/YouTube
+		rm -rf $SYSTEM/app/YoutubeVanced
+		rm -rf $SYSTEM/app/Yunikon
+		rm -rf $SYSTEM/app/arcore
+		rm -rf $SYSTEM/app/com.miui.qr
+		rm -rf $SYSTEM/app/com.xiaomi.macro
+		rm -rf $SYSTEM/app/facebook
+		rm -rf $SYSTEM/app/facebook-appmanager
+		rm -rf $SYSTEM/app/greenguard
+		rm -rf $SYSTEM/app/mab
+		rm -rf $SYSTEM/app/mi_connect_service
+		rm -rf $SYSTEM/app/wps-lite
+		rm -rf $SYSTEM/app/wps_lite
+		rm -rf $SYSTEM/data-app/Gmail2
+		rm -rf $SYSTEM/data-app/MIBrowserGlobal
+		rm -rf $SYSTEM/data-app/MIGalleryLockScreen
+		rm -rf $SYSTEM/data-app/MIGalleryLockScreenGlobal
+		rm -rf $SYSTEM/data-app/MIGalleryLockscreen
+		rm -rf $SYSTEM/data-app/MIGalleryLockscreenGlobal
+		rm -rf $SYSTEM/data-app/MIMediaEditorGlobal
+		rm -rf $SYSTEM/data-app/MIUICompass
+		rm -rf $SYSTEM/data-app/MIUICompassGlobal
+		rm -rf $SYSTEM/data-app/MIUISoundRecorderTargetSdk30
+		rm -rf $SYSTEM/data-app/MIUISoundRecorderTargetSdk30Global
+		rm -rf $SYSTEM/data-app/MIUISuperMarket
+		rm -rf $SYSTEM/data-app/MiCreditInStub
+		rm -rf $SYSTEM/data-app/MiRemote
+		rm -rf $SYSTEM/data-app/ShareMe
+		rm -rf $SYSTEM/data-app/XMRemoteController
+		rm -rf $SYSTEM/etc/yellowpage
+		rm -rf $SYSTEM/priv-app/AnalyticsCore
+		rm -rf $SYSTEM/priv-app/AndroidAutoStub
+		rm -rf $SYSTEM/priv-app/AntHalService
+		rm -rf $SYSTEM/priv-app/Backup
+		rm -rf $SYSTEM/priv-app/BasicDreams
+		rm -rf $SYSTEM/priv-app/BookmarkProvider
 		rm -rf $SYSTEM/priv-app/Browser
+		rm -rf $SYSTEM/priv-app/BugReport
+		rm -rf $SYSTEM/priv-app/BuiltInPrintService
+		rm -rf $SYSTEM/priv-app/CatchLog
 		rm -rf $SYSTEM/priv-app/CellBroadcastServiceModulePlatform
+		rm -rf $SYSTEM/priv-app/Cit
 		rm -rf $SYSTEM/priv-app/CloudBackup
+		rm -rf $SYSTEM/priv-app/CloudPrint2
+		rm -rf $SYSTEM/priv-app/CloudService
 		rm -rf $SYSTEM/priv-app/CloudServiceSysbase
-		rm -rf $SYSTEM/priv-app/facebook-installer
-		rm -rf $SYSTEM/priv-app/facebook-services
+		rm -rf $SYSTEM/priv-app/EmergencyInfo
 		rm -rf $SYSTEM/priv-app/GameCenterGlobal
 		rm -rf $SYSTEM/priv-app/GlobalMinusScreen
+		rm -rf $SYSTEM/priv-app/GoogleAssistant
+		rm -rf $SYSTEM/priv-app/GoogleFeedback
+		rm -rf $SYSTEM/priv-app/GoogleOneTimeInitializer
+		rm -rf $SYSTEM/priv-app/GoogleRestore
 		rm -rf $SYSTEM/priv-app/GoogleTTS
+		rm -rf $SYSTEM/priv-app/HotwordEnrollmentOKGoogleWCD9340
+		rm -rf $SYSTEM/priv-app/HotwordEnrollmentXGoogleWCD9340
+		rm -rf $SYSTEM/priv-app/MIService
+		rm -rf $SYSTEM/priv-app/MIShareGlobal
+		rm -rf $SYSTEM/priv-app/MIUISoundRecorderTargetSdk30Global
+		rm -rf $SYSTEM/priv-app/MIUIYellowPageGlobal
+		rm -rf $SYSTEM/priv-app/MiBrowser
 		rm -rf $SYSTEM/priv-app/MiBrowserGlobal
+		rm -rf $SYSTEM/priv-app/MiCloudSync
+		rm -rf $SYSTEM/priv-app/MiDrive
 		rm -rf $SYSTEM/priv-app/MiDrop
+		rm -rf $SYSTEM/priv-app/MiGame
 		rm -rf $SYSTEM/priv-app/MiGameCenterSDKService
+		rm -rf $SYSTEM/priv-app/MiMover
+		rm -rf $SYSTEM/priv-app/MiMoverGlobal
+		rm -rf $SYSTEM/priv-app/MiPlayClient
 		rm -rf $SYSTEM/priv-app/MiService
 		rm -rf $SYSTEM/priv-app/MiShare
+		rm -rf $SYSTEM/priv-app/MiuiBrowser
 		rm -rf $SYSTEM/priv-app/MiuiBrowserGlobal
+		rm -rf $SYSTEM/priv-app/MiuiBugReport
+		rm -rf $SYSTEM/priv-app/MiuiFreeformService
+		rm -rf $SYSTEM/priv-app/MiuiHealth
+		rm -rf $SYSTEM/priv-app/MiuiMusic
 		rm -rf $SYSTEM/priv-app/MiuiScanner
+		rm -rf $SYSTEM/priv-app/MiuiVideo
+		rm -rf $SYSTEM/priv-app/MusicFX
 		rm -rf $SYSTEM/priv-app/NewHome
+		rm -rf $SYSTEM/priv-app/Notes
 		rm -rf $SYSTEM/priv-app/ONS
+		rm -rf $SYSTEM/priv-app/OneTimeInitializer
+		rm -rf $SYSTEM/priv-app/PartnerBookmarksProvider
+		rm -rf $SYSTEM/priv-app/PersonalAssistant
+		rm -rf $SYSTEM/priv-app/PersonalAssistantGlobal
+		rm -rf $SYSTEM/priv-app/PrintRecommendationService
 		rm -rf $SYSTEM/priv-app/ProxyHandler
 		rm -rf $SYSTEM/priv-app/QuickSearchBox
+		rm -rf $SYSTEM/priv-app/ScannerGlobalStub
 		rm -rf $SYSTEM/priv-app/SoundRecorder
+		rm -rf $SYSTEM/priv-app/SoundRecorderStub
+		rm -rf $SYSTEM/priv-app/SoundRecorderTargetSdk30
 		rm -rf $SYSTEM/priv-app/Tag
+		rm -rf $SYSTEM/priv-app/Turbo
 		rm -rf $SYSTEM/priv-app/UserDictionaryProvider
+		rm -rf $SYSTEM/priv-app/Velvet
+		rm -rf $SYSTEM/priv-app/Videos
 		rm -rf $SYSTEM/priv-app/VoiceCommand
 		rm -rf $SYSTEM/priv-app/VoiceTrigger
 		rm -rf $SYSTEM/priv-app/VoiceUnlock
+		rm -rf $SYSTEM/priv-app/WellbeingPreBuilt
+		rm -rf $SYSTEM/priv-app/WellbeingPrebuilt
 		rm -rf $SYSTEM/priv-app/YellowPage
-		rm -rf $PRODUCT/app/aiasst_service
-		rm -rf $PRODUCT/app/Chrome
-		rm -rf $PRODUCT/app/FM
-		rm -rf $PRODUCT/app/Gmail2
-		rm -rf $PRODUCT/app/GoogleOne
-		rm -rf $PRODUCT/app/GoogleTTS
-		rm -rf $PRODUCT/app/Maps
-		rm -rf $PRODUCT/app/remoteSimLockAuthentication
-		rm -rf $PRODUCT/app/talkback
-		rm -rf $PRODUCT/app/uimremoteclient
-		rm -rf $PRODUCT/app/uimremoteserver
-		rm -rf $PRODUCT/app/YouTube
-		rm -rf $PRODUCT/priv-app/AndroidAutoStub
-		rm -rf $PRODUCT/priv-app/EmergencyInfo
-		rm -rf $PRODUCT/priv-app/GoogleAssistant
-		rm -rf $PRODUCT/priv-app/HotwordEnrollmentOKGoogleCORTEXM4
-		rm -rf $PRODUCT/priv-app/HotwordEnrollmentXGoogleCORTEXM4
-		rm -rf $PRODUCT/priv-app/ims
-		rm -rf $PRODUCT/priv-app/Velvet
-		rm -rf $PRODUCT/priv-app/Wellbeing
-		rm -rf $SYSTEM_EXT/app/FM
+		rm -rf $SYSTEM/priv-app/YouTube
+		rm -rf $SYSTEM/priv-app/arcore
+		rm -rf $SYSTEM/priv-app/facebook
+		rm -rf $SYSTEM/priv-app/facebook-installer
+		rm -rf $SYSTEM/priv-app/facebook-services
+		rm -rf $SYSTEM/system/product/priv-app/QtiSoundRecorder
 		rm -rf $SYSTEM/vendor/app/Joyose
 		rm -rf $SYSTEM/vendor/app/SoterService
 		rm -rf $SYSTEM/vendor/data/app/Drive
 		rm -rf $SYSTEM/vendor/data/app/Duo
 		rm -rf $SYSTEM/vendor/data/app/Music2
 		rm -rf $SYSTEM/vendor/data/app/Photos
-		rm -rf $SYSTEM/vendor/data/app/wps_lite
 		rm -rf $SYSTEM/vendor/data/app/XMRemoteController
-		rm -rf $SYSTEM/priv-app/PersonalAssistant
-		rm -rf $SYSTEM/app/NotesGlobalStub
-		#	rm -rf $SYSTEM/app/CalculatorGlobalStub
-		rm -rf $SYSTEM/app/MiDropStub
-		rm -rf $SYSTEM/app/CompassGlobalStub
-		rm -rf $SYSTEM/priv-app/ScannerGlobalStub
-		rm -rf $SYSTEM/priv-app/SoundRecorderStub
-		rm -rf $PRODUCT/priv-app/GoogleRestore
-		rm -rf $PRODUCT/overlay/Monet*
-		rm -rf $PRODUCT/app/GlobalFashiongallery
+		rm -rf $SYSTEM/vendor/data/app/wps_lite
+		rm -rf $SYSTEM_EXT/app/FM
+		rm -rf $SYSTEM_EXT/app/Papers
+		rm -rf $SYSTEM_EXT/priv-app/EmergencyInfo
 		rm -rf $SYSTEM_EXT/priv-app/GoogleFeedback
-		rm -rf $SYSTEM/app/MiuiAudioMonitor
-		rm -rf $SYSTEM/app/GoogleOneTimeInitializer
-		rm -rf $SYSTEM/priv-app/GoogleOneTimeInitializer
-		rm -rf $SYSTEM/app/GoogleOneTimeInitializer
-		rm -rf $SYSTEM/priv-app/GoogleOneTimeInitializer
-		rm -rf $SYSTEM/app/GoogleOneTimeInitializer
-		rm -rf $SYSTEM/priv-app/GoogleOneTimeInitializer
-		rm -rf $PRODUCT/app/GoogleOneTimeInitializer
-		rm -rf $PRODUCT/priv-app/GoogleOneTimeInitializer
-		rm -rf $SYSTEM/app/GoogleFeedback
-		rm -rf $SYSTEM/priv-app/GoogleFeedback
-		rm -rf $SYSTEM/app/GoogleFeedback
-		rm -rf $SYSTEM/priv-app/GoogleFeedback
-		rm -rf $SYSTEM/app/GoogleFeedback
-		rm -rf $SYSTEM/priv-app/GoogleFeedback
-		rm -rf $PRODUCT/app/GoogleFeedback
-		rm -rf $PRODUCT/priv-app/GoogleFeedback
-		rm -rf $SYSTEM/app/GoogleAssistant
-		rm -rf $SYSTEM/priv-app/GoogleAssistant
-		rm -rf $SYSTEM/app/GoogleAssistant
-		rm -rf $SYSTEM/priv-app/GoogleAssistant
-		rm -rf $SYSTEM/app/GoogleAssistant
-		rm -rf $SYSTEM/priv-app/GoogleAssistant
-		rm -rf $SYSTEM/app/GoogleAssistant
-		rm -rf $SYSTEM/priv-app/GoogleAssistant
-		rm -rf $SYSTEM/app/GoogleAssistant
-		rm -rf $SYSTEM/priv-app/GoogleAssistant
-		rm -rf $SYSTEM/app/GoogleAssistant
-		rm -rf $SYSTEM/priv-app/GoogleAssistant
-		rm -rf $PRODUCT/app/GoogleAssistant
-		rm -rf $PRODUCT/priv-app/GoogleAssistant
-		rm -rf $SYSTEM/app/MiMoverGlobal
-		rm -rf $SYSTEM/priv-app/MiMoverGlobal
-		rm -rf $SYSTEM/priv-app/MiMover
-		rm -rf $SYSTEM/app/MiMoverGlobal
-		rm -rf $SYSTEM/priv-app/MiMoverGlobal
-		rm -rf $SYSTEM/app/MiMoverGlobal
-		rm -rf $SYSTEM/priv-app/MiMoverGlobal
-		rm -rf $SYSTEM/app/OneTimeInitializer
-		rm -rf $SYSTEM/priv-app/OneTimeInitializer
-		rm -rf $SYSTEM/app/OneTimeInitializer
-		rm -rf $SYSTEM/priv-app/OneTimeInitializer
-		rm -rf $SYSTEM/app/OneTimeInitializer
-		rm -rf $SYSTEM/priv-app/OneTimeInitializer
-		rm -rf $SYSTEM/app/MiuiFreeformService
-		rm -rf $SYSTEM/priv-app/MiuiFreeformService
-		rm -rf $SYSTEM/app/MiuiFreeformService
-		rm -rf $SYSTEM/priv-app/MiuiFreeformService
-		rm -rf $SYSTEM/app/MiuiFreeformService
-		rm -rf $SYSTEM/priv-app/MiuiFreeformService
-		rm -rf $SYSTEM/app/HotwordEnrollmentOKGoogleWCD9340
-		rm -rf $SYSTEM/priv-app/HotwordEnrollmentOKGoogleWCD9340
-		rm -rf $SYSTEM/app/HotwordEnrollmentOKGoogleWCD9340
-		rm -rf $SYSTEM/priv-app/HotwordEnrollmentOKGoogleWCD9340
-		rm -rf $SYSTEM/app/HotwordEnrollmentOKGoogleWCD9340
-		rm -rf $SYSTEM/priv-app/HotwordEnrollmentOKGoogleWCD9340
-		rm -rf $SYSTEM/priv-app/HotwordEnrollmentXGoogleWCD9340
-		rm -rf $SYSTEM/priv-app/HotwordEnrollmentXGoogleWCD9340
-		rm -rf $SYSTEM/app/HotwordEnrollmentXGoogleWCD9340
-		rm -rf $SYSTEM/priv-app/HotwordEnrollmentXGoogleWCD9340
-		rm -rf $SYSTEM/app/HotwordEnrollmentXGoogleWCD9340
-		rm -rf $SYSTEM/priv-app/HotwordEnrollmentXGoogleWCD9340
-		rm -rf $SYSTEM/app/GoogleRestore
-		rm -rf $SYSTEM/priv-app/GoogleRestore
-		rm -rf $SYSTEM/app/GoogleRestore
-		rm -rf $SYSTEM/priv-app/GoogleRestore
-		rm -rf $SYSTEM/app/GoogleRestore
-		rm -rf $SYSTEM/priv-app/GoogleRestore
-		rm -rf $PRODUCT/app/GoogleRestore
-		rm -rf $PRODUCT/priv-app/GoogleRestore
-		rm -rf $PRODUCT/app/GoogleRestore
-		rm -rf $PRODUCT/priv-app/GoogleRestore
-		rm -rf $SYSTEM/app/AntHalService
-		rm -rf $SYSTEM/priv-app/AntHalService
-		rm -rf $SYSTEM/app/AntHalService
-		rm -rf $SYSTEM/priv-app/AntHalService
-		rm -rf $SYSTEM/app/AntHalService
-		rm -rf $SYSTEM/priv-app/AntHalService
-		rm -rf $SYSTEM/app/MiPlayClient
-		rm -rf $SYSTEM/priv-app/MiPlayClient
-		rm -rf $SYSTEM/app/MiPlayClient
-		rm -rf $SYSTEM/priv-app/MiPlayClient
-		rm -rf $SYSTEM/app/MiPlayClient
-		rm -rf $SYSTEM/priv-app/MiPlayClient
-		rm -rf $SYSTEM/app/MiDrive
-		rm -rf $SYSTEM/priv-app/MiDrive
-		rm -rf $SYSTEM/app/MiDrive
-		rm -rf $SYSTEM/priv-app/MiDrive
-		rm -rf $SYSTEM/app/MiDrive
-		rm -rf $SYSTEM/priv-app/MiDrive
-		rm -rf $SYSTEM/app/CloudService
-		rm -rf $SYSTEM/priv-app/CloudService
-		rm -rf $SYSTEM/app/CloudService
-		rm -rf $SYSTEM/priv-app/CloudService
-		rm -rf $SYSTEM/app/CloudService
-		rm -rf $SYSTEM/priv-app/CloudService
-		rm -rf $SYSTEM/app/MiCloudSync
-		rm -rf $SYSTEM/priv-app/MiCloudSync
-		rm -rf $SYSTEM/app/MiCloudSync
-		rm -rf $SYSTEM/priv-app/MiCloudSync
-		rm -rf $SYSTEM/app/MiCloudSync
-		rm -rf $SYSTEM/priv-app/MiCloudSync
-		rm -rf $SYSTEM/app/PrintRecommendationService
-		rm -rf $SYSTEM/priv-app/PrintRecommendationService
-		rm -rf $SYSTEM/app/PrintRecommendationService
-		rm -rf $SYSTEM/priv-app/PrintRecommendationService
-		rm -rf $SYSTEM/app/PrintRecommendationService
-		rm -rf $SYSTEM/priv-app/PrintRecommendationService
-		rm -rf $SYSTEM/app/AnalyticsCore
-		rm -rf $SYSTEM/priv-app/AnalyticsCore
-		rm -rf $SYSTEM/app/AnalyticsCore
-		rm -rf $SYSTEM/priv-app/AnalyticsCore
-		rm -rf $SYSTEM/app/AnalyticsCore
-		rm -rf $SYSTEM/priv-app/AnalyticsCore
-		rm -rf $SYSTEM/app/EmergencyInfo
-		rm -rf $SYSTEM/priv-app/EmergencyInfo
-		rm -rf $SYSTEM/app/EmergencyInfo
-		rm -rf $SYSTEM/priv-app/EmergencyInfo
-		rm -rf $SYSTEM/app/EmergencyInfo
-		rm -rf $SYSTEM/priv-app/EmergencyInfo
-		rm -rf $PRODUCT/app/EmergencyInfo
-		rm -rf $PRODUCT/priv-app/HelpRtcPrebuilt
-		rm -rf $PRODUCT/priv-app/EmergencyInfo
-		rm -rf $PRODUCT/app/EmergencyInfo
-		rm -rf $PRODUCT/priv-app/EmergencyInfo
-		rm -rf $PRODUCT/app/EmergencyInfo
-		rm -rf $PRODUCT/priv-app/EmergencyInfo
-		rm -rf $SYSTEM/app/AndroidAutoStub
-		rm -rf $SYSTEM/priv-app/AndroidAutoStub
-		rm -rf $SYSTEM/app/AndroidAutoStub
-		rm -rf $SYSTEM/priv-app/AndroidAutoStub
-		rm -rf $SYSTEM/app/AndroidAutoStub
-		rm -rf $SYSTEM/priv-app/AndroidAutoStub
-		rm -rf $PRODUCT/app/AndroidAutoStub
-		rm -rf $PRODUCT/priv-app/AndroidAutoStub
-		rm -rf $PRODUCT/app/AndroidAutoStub
-		rm -rf $PRODUCT/priv-app/AndroidAutoStub
-		rm -rf $PRODUCT/app/AndroidAutoStub
-		rm -rf $PRODUCT/priv-app/AndroidAutoStub
-		rm -rf $SYSTEM/priv-app/PersonalAssistant
-		rm -rf $SYSTEM/priv-app/PersonalAssistantGlobal
-		rm -rf $SYSTEM/app/PersonalAssistant
-		rm -rf $SYSTEM/app/PersonalAssistantGlobal
-		rm -rf $SYSTEM/priv-app/PersonalAssistant
-		rm -rf $SYSTEM/priv-app/PersonalAssistantGlobal
-		rm -rf $SYSTEM/app/PersonalAssistant
-		rm -rf $SYSTEM/app/PersonalAssistantGlobal
-		rm -rf $SYSTEM/priv-app/PersonalAssistant
-		rm -rf $SYSTEM/priv-app/PersonalAssistantGlobal
-		rm -rf $SYSTEM/app/PersonalAssistant
-		rm -rf $SYSTEM/app/PersonalAssistantGlobal
-		rm -rf $SYSTEM/app/VoiceAssist
-		rm -rf $SYSTEM/priv-app/CloudBackup
-		rm -rf $SYSTEM/priv-app/Backup
-		rm -rf $SYSTEM/app/Backup
-		rm -rf $SYSTEM/priv-app/Backup
-		rm -rf $SYSTEM/app/Backup
-		rm -rf $SYSTEM/priv-app/Backup
-		rm -rf $SYSTEM/app/Backup
-		rm -rf $PRODUCT/app/VoiceAssist
-		rm -rf $PRODUCT/priv-app/CloudBackup
-		rm -rf $PRODUCT/priv-app/Backup
-		rm -rf $PRODUCT/app/Backup
-		rm -rf $PRODUCT/priv-app/Backup
-		rm -rf $PRODUCT/app/Backup
-		rm -rf $PRODUCT/priv-app/Backup
-		rm -rf $PRODUCT/app/Backup
-		rm -rf $PRODUCT/priv-app/CloudBackup
-		rm -rf $PRODUCT/priv-app/CloudBackup
-		rm -rf $PRODUCT/app/CloudBackup
-		rm -rf $PRODUCT/priv-app/CloudBackup
-		rm -rf $PRODUCT/app/CloudBackup
-		rm -rf $PRODUCT/priv-app/CloudBackup
-		rm -rf $PRODUCT/app/CloudBackup
-		rm -rf $SYSTEM/app/BasicDreams
-		rm -rf $SYSTEM/priv-app/BasicDreams
-		rm -rf $SYSTEM/app/BasicDreams
-		rm -rf $SYSTEM/priv-app/BasicDreams
-		rm -rf $SYSTEM/app/BasicDreams
-		rm -rf $SYSTEM/priv-app/BasicDreams
-		rm -rf $SYSTEM/app/BookmarkProvider
-		rm -rf $SYSTEM/priv-app/BookmarkProvider
-		rm -rf $SYSTEM/app/BookmarkProvider
-		rm -rf $SYSTEM/priv-app/BookmarkProvider
-		rm -rf $SYSTEM/app/BookmarkProvider
-		rm -rf $SYSTEM/priv-app/BookmarkProvider
-		rm -rf $SYSTEM/priv-app/Browser
-		rm -rf $SYSTEM/app/Browser
-		rm -rf $SYSTEM/priv-app/Browser
-		rm -rf $SYSTEM/priv-app/MiuiBrowserGlobal
-		rm -rf $SYSTEM/app/MiuiBrowserGlobal
-		rm -rf $SYSTEM/app/MiuiBrowserGlobal
-		rm -rf $SYSTEM/priv-app/MiuiBrowserGlobal
-		rm -rf $SYSTEM/priv-app/MiuiBrowserGlobal
-		rm -rf $SYSTEM/app/MiuiBrowserGlobal
-		rm -rf $SYSTEM/priv-app/MiBrowserGlobal
-		rm -rf $SYSTEM/app/MiBrowserGlobal
-		rm -rf $SYSTEM/app/MiBrowserGlobal
-		rm -rf $SYSTEM/priv-app/MiBrowserGlobal
-		rm -rf $SYSTEM/priv-app/MiBrowserGlobal
-		rm -rf $SYSTEM/app/MiBrowserGlobal
-		rm -rf $SYSTEM/app/Browser
-		rm -rf $SYSTEM/priv-app/Browser
-		rm -rf $SYSTEM/app/Browser
-		rm -rf $SYSTEM/app/BugReport
-		rm -rf $SYSTEM/app/MiuiBugReport
-		rm -rf $SYSTEM/priv-app/BugReport
-		rm -rf $SYSTEM/priv-app/MiuiBugReport
-		rm -rf $SYSTEM/app/BugReport
-		rm -rf $SYSTEM/app/MiuiBugReport
-		rm -rf $SYSTEM/priv-app/BugReport
-		rm -rf $SYSTEM/priv-app/MiuiBugReport
-		rm -rf $SYSTEM/app/BugReport
-		rm -rf $SYSTEM/app/MiuiBugReport
-		rm -rf $SYSTEM/priv-app/BugReport
-		rm -rf $SYSTEM/priv-app/MiuiBugReport
-		rm -rf $SYSTEM/app/BuiltInPrintService
-		rm -rf $SYSTEM/priv-app/BuiltInPrintService
-		rm -rf $SYSTEM/app/BuiltInPrintService
-		rm -rf $SYSTEM/priv-app/BuiltInPrintService
-		rm -rf $SYSTEM/app/BuiltInPrintService
-		rm -rf $SYSTEM/priv-app/BuiltInPrintService
-		rm -rf $SYSTEM/app/CatchLog
-		rm -rf $SYSTEM/priv-app/CatchLog
-		rm -rf $SYSTEM/app/CatchLog
-		rm -rf $SYSTEM/priv-app/CatchLog
-		rm -rf $SYSTEM/app/CatchLog
-		rm -rf $SYSTEM/priv-app/CatchLog
-		rm -rf $SYSTEM/app/Cit
-		rm -rf $SYSTEM/priv-app/Cit
-		rm -rf $SYSTEM/app/Cit
-		rm -rf $SYSTEM/priv-app/Cit
-		rm -rf $SYSTEM/app/Cit
-		rm -rf $SYSTEM/priv-app/Cit
-		rm -rf $SYSTEM/app/CloudPrint2
-		rm -rf $SYSTEM/priv-app/CloudPrint2
-		rm -rf $SYSTEM/app/CloudPrint2
-		rm -rf $SYSTEM/priv-app/CloudPrint2
-		rm -rf $SYSTEM/app/CloudPrint2
-		rm -rf $SYSTEM/priv-app/CloudPrint2
-		rm -rf $SYSTEM/priv-app/CloudServiceSysbase
-		rm -rf $SYSTEM/app/CloudServiceSysbase
-		rm -rf $SYSTEM/priv-app/CloudServiceSysbase
-		rm -rf $SYSTEM/app/CloudServiceSysbase
-		rm -rf $SYSTEM/priv-app/CloudServiceSysbase
-		rm -rf $SYSTEM/app/CloudServiceSysbase
-		rm -rf $SYSTEM_EXT/priv-app/MatLog
+		rm -rf $SYSTEM_EXT/priv-app/Leaflet
+		rm -rf $SYSTEM_EXT/priv-app/MatLogrm#
 		#
 		#
 		#
@@ -801,359 +555,217 @@ debloater() {
 	elif [ -e /system_root/my_stock ]; then #debloat para oxigen
 		SYSTEM_ROOT="/system_root"
 		ui_print "* - Borrando apps en OxigenOS...                 *"
-		rm -rf $SYSTEM_ROOT/my_product/app/HotwordEnrollment*.apk
-		rm -rf $SYSTEM_ROOT/my_bigball/app/Omoji
+		rm -rf $SYSTEM_EXT/app/LogKit
+		rm -rf $SYSTEM_EXT/app/Olc
 		rm -rf $SYSTEM_ROOT/my_heytap/app/ARCore
+		rm -rf $SYSTEM_ROOT/my_heytap/app/Chrome
 		rm -rf $SYSTEM_ROOT/my_heytap/app/Music
 		rm -rf $SYSTEM_ROOT/my_heytap/app/SpeechServicesByGoogle
 		rm -rf $SYSTEM_ROOT/my_heytap/app/talkback
-		rm -rf $SYSTEM_ROOT/my_heytap/app/Chrome
+		rm -rf $SYSTEM_ROOT/my_heytap/non_overlay/priv-app/SetupWizard
 		rm -rf $SYSTEM_ROOT/my_heytap/priv-app/AndroidAutoStub
 		rm -rf $SYSTEM_ROOT/my_heytap/priv-app/GoogleRestore
 		rm -rf $SYSTEM_ROOT/my_heytap/priv-app/Velvet
 		rm -rf $SYSTEM_ROOT/my_heytap/priv-app/Wellbeing
-		rm -rf $SYSTEM_ROOT/my_heytap/non_overlay/priv-app/SetupWizard
 		rm -rf $SYSTEM_ROOT/my_stock/app/ChildrenSpace
-		rm -rf $SYSTEM_ROOT/my_stock/app/OplusOperationManual
 		rm -rf $SYSTEM_ROOT/my_stock/app/OPlusSegurityKeyboard
+		rm -rf $SYSTEM_ROOT/my_stock/app/OplusOperationManual
 		rm -rf $SYSTEM_ROOT/my_stock/del-app/OPBreathMode
 		rm -rf $SYSTEM_ROOT/my_stock/del-app/OPNote
 		rm -rf $SYSTEM_ROOT/my_stock/priv-app/KeKeUserCenter
 		rm -rf $SYSTEM_ROOT/my_stock/priv-app/SOSHelper
-		rm -rf $SYSTEM_EXT/app/LogKit
-		rm -rf $SYSTEM_EXT/app/Olc
+		rm -rf $SYSTEM_ROOT/my_bigball/app/Omoji
+		rm -rf $SYSTEM_ROOT/my_product/app/HotwordEnrollment*.apk
 		sleep 2.0
 	else
 		ui_print "* - Borrando apps en AOSP...                     *"
-		rm -rf $PRODUCT/app/GalleryGo
-		rm -rf $SYSTEM_EXT/app/Superiorwalls
-		rm -rf $SYSTEM/app/Superiorwalls
-		rm -rf $SYSTEM_EXT/priv-app/Updates
-		rm -rf $PRODUCT/priv-app/ScribePrebuilt
-		rm -rf $PRODUCT/priv-app/PixelLiveWallpaperPrebuilt
-		rm -rf $PRODUCT/priv-app/HelpRtcPrebuilt
-		rm -rf $SYSTEM_EXT/app/Photos
-		rm -rf $SYSTEM_EXT/app/FM2
-		rm -rf $SYSTEM_EXT/priv-app/FM2
-		rm -rf $PRODUCT/app/FM2
-		rm -rf $PRODUCT/priv-app/FM2
-		rm -rf $SYSTEM/app/FM2
-		rm -rf $SYSTEM/priv-app/FM2
-		rm -rf $SYSTEM_EXT/priv-app/WellbeingPrebuilt
-		rm -rf $SYSTEM_EXT/priv-app/GoogleRestore
-		rm -rf $SYSTEM_EXT/priv-app/AndroidAutoStubPrebuilt
-		rm -rf $PRODUCT/priv-app/AndroidAutoStubPrebuilt
-		rm -rf $PRODUCT/app/GoogleTTS
-		rm -rf $PRODUCT/app/talkback
-		rm -rf $SYSTEM_EXT/priv-app/EmergencyInfo
-		rm -rf $PRODUCT/priv-app/GoogleRestorePrebuilt
-		rm -rf $PRODUCT/priv-app/WellbeingPrebuilt
-		rm -rf $PRODUCT/priv-app/GoogleRestorePrebuilt
-		rm -rf $PRODUCT/app/Velvet
-		rm -rf $PRODUCT/priv-app/Velvet
-		rm -rf $SYSTEM/priv-app/Velvet
-		rm -rf $SYSTEM/app/Velvet
-		rm -rf $PRODUCT/app/PrebuiltGmail
-		rm -rf $PRODUCT/app/Chrome-Stub
+		rm -rf $PRODUCT/app/AboutBliss
+		rm -rf $PRODUCT/app/Abstruct
+		rm -rf $PRODUCT/app/BasicDreams
+		rm -rf $PRODUCT/app/BlissStatistics
+		rm -rf $PRODUCT/app/BookmarkProvider
+		rm -rf $PRODUCT/app/Bromite
+		rm -rf $PRODUCT/app/Browser
+		rm -rf $PRODUCT/app/Calendar
 		rm -rf $PRODUCT/app/Chrome
-		rm -rf $PRODUCT/priv-app/Chrome
-		rm -rf $PRODUCT/app/arcore
-		rm -rf $SYSTEM/app/arcore
-		rm -rf $SYSTEM/priv-app/arcore
-		rm -rf $PRODUCT/priv-app/arcore
-		rm -rf $PRODUCT/priv-app/WellbeingPrebuilt
-		rm -rf $PRODUCT/app/WellbeingPrebuilt
-		rm -rf $SYSTEM/app/WellbeingPrebuilt
-		rm -rf $SYSTEM/priv-app/WellbeingPrebuilt
-		rm -rf $PRODUCT/priv-app/GoogleRestorePrebuilt
-		rm -rf $SYSTEM_EXT/priv-app/Leaflet
-		rm -rf $SYSTEM_EXT/priv-app/Music
-		rm -rf $PRODUCT/app/talkback
-		rm -rf $PRODUCT/app/GoogleTTS
+		rm -rf $PRODUCT/app/Chrome-Stub
+		rm -rf $PRODUCT/app/Dashboard
 		rm -rf $PRODUCT/app/DevicePolicyPrebuilt
-		rm -rf $PRODUCT/priv-app/NovaBugreportWrapper
-		rm -rf $SYSTEM_EXT/app/Papers
+		rm -rf $PRODUCT/app/Drive
+		rm -rf $PRODUCT/app/EasterEgg
+		rm -rf $PRODUCT/app/Email
+		rm -rf $PRODUCT/app/EmergencyInfo
+		rm -rf $PRODUCT/app/Etar
+		rm -rf $PRODUCT/app/ExactCalculator
+		rm -rf $PRODUCT/app/Exchange2
+		rm -rf $PRODUCT/app/FM2
+		rm -rf $PRODUCT/app/Gallery
+		rm -rf $PRODUCT/app/Gallery2
+		rm -rf $PRODUCT/app/GalleryGoPrebuilt
+		rm -rf $PRODUCT/app/GoogleTTS
+		rm -rf $PRODUCT/app/GrapheneCamera
+		rm -rf $PRODUCT/app/Jelly
+		rm -rf $PRODUCT/app/Maps
+		rm -rf $PRODUCT/app/Music
+		rm -rf $PRODUCT/app/OPWidget
+		rm -rf $PRODUCT/app/PartnerBookmark
+		rm -rf $PRODUCT/app/Partnerbookmark
+		rm -rf $PRODUCT/app/PhotoTable
+		rm -rf $PRODUCT/app/Photos
+		rm -rf $PRODUCT/app/PrebuiltGmail
+		rm -rf $PRODUCT/app/QPGallery
+		rm -rf $PRODUCT/app/QtiSoundRecorder
+		rm -rf $PRODUCT/app/Recorder
+		rm -rf $PRODUCT/app/RetroMusic
+		rm -rf $PRODUCT/app/RetroMusicPlayer
+		rm -rf $PRODUCT/app/SimpleGallery
+		rm -rf $PRODUCT/app/Tycho
+		rm -rf $PRODUCT/app/Velvet
+		rm -rf $PRODUCT/app/Via
+		rm -rf $PRODUCT/app/Videos
+		rm -rf $PRODUCT/app/WallpaperZone
+		rm -rf $PRODUCT/app/WallpapersBReel2020
+		rm -rf $PRODUCT/app/WallpapersBReel2020a
+		rm -rf $PRODUCT/app/WellbeingPrebuilt
 		rm -rf $PRODUCT/app/XPerienceWallpapers
-		rm -rf $SYSTEM/app/Yunikon
+		rm -rf $PRODUCT/app/YouTube
+		rm -rf $PRODUCT/app/YouTubeMusicPrebuilt
+		rm -rf $PRODUCT/app/arcore
+		rm -rf $PRODUCT/app/crDroidMusic
+		rm -rf $PRODUCT/app/talkback
+		rm -rf $PRODUCT/overlay/ChromeOverlay
+		rm -rf $PRODUCT/overlay/TelegramOverlay
+		rm -rf $PRODUCT/overlay/WhatsAppOverlay
+		rm -rf $PRODUCT/priv-app/AncientWallpaperZone
+		rm -rf $PRODUCT/priv-app/AndroidAutoStub
+		rm -rf $PRODUCT/priv-app/AndroidAutoStubPrebuilt
+		rm -rf $PRODUCT/priv-app/AndroidMigratePrebuilt
+		rm -rf $PRODUCT/priv-app/Chrome
+		rm -rf $PRODUCT/priv-app/DuckDuckGo
+		rm -rf $PRODUCT/priv-app/Eleven
+		rm -rf $PRODUCT/priv-app/Email
+		rm -rf $PRODUCT/priv-app/EmergencyInfo
+		rm -rf $PRODUCT/priv-app/FM2
+		rm -rf $PRODUCT/priv-app/Gallery2
+		rm -rf $PRODUCT/priv-app/GoogleRestore
+		rm -rf $PRODUCT/priv-app/GoogleRestorePrebuilt
+		rm -rf $PRODUCT/priv-app/HelpRtcPrebuilt
+		rm -rf $PRODUCT/priv-app/HotwordEnrollmentOKGoogleHEXAGON
+		rm -rf $PRODUCT/priv-app/HotwordEnrollmentXGoogleHEXAGON
+		rm -rf $PRODUCT/priv-app/MatLog
+		rm -rf $PRODUCT/priv-app/MusicFX
+		rm -rf $PRODUCT/priv-app/NovaBugreportWrapper
+		rm -rf $PRODUCT/priv-app/OmniSwitch
+		rm -rf $PRODUCT/priv-app/PixelLiveWallpaperPrebuilt
+		rm -rf $PRODUCT/priv-app/PixelSetupWizard
 		rm -rf $PRODUCT/priv-app/QtiSoundRecorder
-		rm -rf $SYSTEM/app/AbleMusic
+		rm -rf $PRODUCT/priv-app/RecorderPrebuilt
+		rm -rf $PRODUCT/priv-app/RetroMusicPlayer
+		rm -rf $PRODUCT/priv-app/SafetyHub
+		rm -rf $PRODUCT/priv-app/SafetyHubPrebuilt
+		rm -rf $PRODUCT/priv-app/ScribePrebuilt
+		rm -rf $PRODUCT/priv-app/SetupWizard
+		rm -rf $PRODUCT/priv-app/SetupWizardPrebuilt
+		rm -rf $PRODUCT/priv-app/SimpleCalendar
+		rm -rf $PRODUCT/priv-app/SimpleGallery
+		rm -rf $PRODUCT/priv-app/Snap
+		rm -rf $PRODUCT/priv-app/Tag
+		rm -rf $PRODUCT/priv-app/TipsPrebuilt
 		rm -rf $PRODUCT/priv-app/Velvet
+		rm -rf $PRODUCT/priv-app/Via
+		rm -rf $PRODUCT/priv-app/ViaBrowser
+		rm -rf $PRODUCT/priv-app/VinylMusicPlayer
+		rm -rf $PRODUCT/priv-app/Wellbeing
+		rm -rf $PRODUCT/priv-app/WellbeingPrebuilt
+		rm -rf $PRODUCT/priv-app/arcore
+		rm -rf $PRODUCT/priv-app/crDroidMusic
+		rm -rf $PRODUCT/priv-app/stats
+		rm -rf $SYSTEM/app/AbleMusic
 		rm -rf $SYSTEM/app/Abstruct
+		rm -rf $SYSTEM/app/Aves
+		rm -rf $SYSTEM/app/BasicDreams
+		rm -rf $SYSTEM/app/BlissPapers
 		rm -rf $SYSTEM/app/BlissUpdater
-		rm -rf $SYSTEM/priv-app/BlissUpdater
-		rm -rf $SYSTEM/app/BasicDreams
-		rm -rf $SYSTEM/app/BlissPapers
-		rm -rf $SYSTEM/app/BookmarkProvider
-		rm -rf $SYSTEM/app/Browser
-		rm -rf $SYSTEM/app/Abstruct
-		rm -rf $SYSTEM/app/BasicDreams
-		rm -rf $SYSTEM/app/BlissPapers
 		rm -rf $SYSTEM/app/BookmarkProvider
 		rm -rf $SYSTEM/app/Browser
 		rm -rf $SYSTEM/app/Chromium
+		rm -rf $SYSTEM/app/CloudPrint
 		rm -rf $SYSTEM/app/ColtPapers
+		rm -rf $SYSTEM/app/DuckDuckGo
 		rm -rf $SYSTEM/app/EggGame
 		rm -rf $SYSTEM/app/Email
 		rm -rf $SYSTEM/app/Exchange2
+		rm -rf $SYSTEM/app/FM2
 		rm -rf $SYSTEM/app/Gallery
 		rm -rf $SYSTEM/app/GugelClock
 		rm -rf $SYSTEM/app/Jelly
 		rm -rf $SYSTEM/app/Kiwi
 		rm -rf $SYSTEM/app/MiXplorer
 		rm -rf $SYSTEM/app/Music
-		rm -rf $SYSTEM/app/Partnerbookmark
 		rm -rf $SYSTEM/app/PartnerBookmark
+		rm -rf $SYSTEM/app/Partnerbookmark
 		rm -rf $SYSTEM/app/Phonograph
 		rm -rf $SYSTEM/app/PhotoTable
-		rm -rf $SYSTEM/app/RetroMusic
-		rm -rf $SYSTEM/app/VanillaMusic
-		rm -rf $SYSTEM/app/Via
 		rm -rf $SYSTEM/app/QPGallery
-		rm -rf $SYSTEM/priv-app/AudioFX
-		rm -rf $SYSTEM/priv-app/Eleven
-		rm -rf $SYSTEM/priv-app/MatLog
-		rm -rf $SYSTEM/priv-app/MusicFX
-		rm -rf $SYSTEM/priv-app/OmniSwitch
-		rm -rf $SYSTEM/priv-app/Snap
-		rm -rf $SYSTEM/priv-app/Tag
-		rm -rf $SYSTEM/priv-app/Via
-		rm -rf $SYSTEM/priv-app/VinylMusicPlayer
-		rm -rf $SYSTEM_EXT/app/EmergencyInfo
+		rm -rf $SYSTEM/app/RetroMusic
+		rm -rf $SYSTEM/app/RetroMusicPlayer
+		rm -rf $SYSTEM/app/RetroMusicPlayerPrebuilt
 		rm -rf $SYSTEM/app/SimpleCalendar
-		rm -rf $SYSTEM_EXT/priv-app/EmergencyInfo
-		rm -rf $SYSTEM/app/Abstruct
-		rm -rf $SYSTEM/app/BasicDreams
-		rm -rf $SYSTEM/app/BlissPapers
-		rm -rf $SYSTEM/app/BookmarkProvider
-		rm -rf $SYSTEM/app/Browser
-		rm -rf $SYSTEM/app/Chromium
-		rm -rf $SYSTEM/app/ColtPapers
-		rm -rf $SYSTEM/app/EggGame
-		rm -rf $SYSTEM/app/Email
-		rm -rf $SYSTEM/app/Exchange2
-		rm -rf $SYSTEM/app/Gallery
-		rm -rf $SYSTEM/app/Jelly
-		rm -rf $SYSTEM/app/Kiwi
-		rm -rf $SYSTEM/app/Aves
+		rm -rf $SYSTEM/app/SimpleGallery
 		rm -rf $SYSTEM/app/StagWalls
-		rm -rf $SYSTEM/priv-app/MetroMusicPlayer
-		rm -rf $SYSTEM/app/MiXplorer
-		rm -rf $SYSTEM/app/Music
-		rm -rf $SYSTEM/app/Partnerbookmark
-		rm -rf $SYSTEM/app/PartnerBookmark
-		rm -rf $SYSTEM/app/Phonograph
-		rm -rf $SYSTEM/app/PhotoTable
-		rm -rf $SYSTEM/app/RetroMusic
+		rm -rf $SYSTEM/app/Superiorwalls
+		rm -rf $SYSTEM/app/TilesWallpaper
 		rm -rf $SYSTEM/app/VanillaMusic
+		rm -rf $SYSTEM/app/Velvet
 		rm -rf $SYSTEM/app/Via
-		rm -rf $SYSTEM/app/QPGallery
+		rm -rf $SYSTEM/app/ViaBrowser
+		rm -rf $SYSTEM/app/WellbeingPrebuilt
+		rm -rf $SYSTEM/app/Yunikon
+		rm -rf $SYSTEM/app/arcore
+		rm -rf $SYSTEM/app/crDroidMusic
 		rm -rf $SYSTEM/priv-app/AudioFX
+		rm -rf $SYSTEM/priv-app/BlissUpdater
+		rm -rf $SYSTEM/priv-app/Calendar
 		rm -rf $SYSTEM/priv-app/Eleven
-		rm -rf $SYSTEM/priv-app/MatLog
-		rm -rf $SYSTEM/priv-app/MusicFX
-		rm -rf $SYSTEM/priv-app/OmniSwitch
-		rm -rf $SYSTEM/priv-app/Snap
-		rm -rf $SYSTEM/priv-app/Tag
-		rm -rf $SYSTEM/priv-app/Via
+		rm -rf $SYSTEM/priv-app/Email
+		rm -rf $SYSTEM/priv-app/FM2
 		rm -rf $SYSTEM/priv-app/Gallery2
 		rm -rf $SYSTEM/priv-app/MatLog
-		rm -rf $SYSTEM/priv-app/Calendar
-		rm -rf $SYSTEM/app/SimpleCalendar
-		rm -rf $SYSTEM/app/Browser
-		rm -rf $SYSTEM/app/DuckDuckGo
-		rm -rf $SYSTEM/app/Jelly
-		rm -rf $SYSTEM/app/ViaBrowser
+		rm -rf $SYSTEM/priv-app/MetroMusicPlayer
 		rm -rf $SYSTEM/priv-app/MusicFX
-		rm -rf $SYSTEM/priv-app/AudioFX
-		rm -rf $SYSTEM/priv-app/Snap
-		rm -rf $SYSTEM/app/SimpleGallery
-		rm -rf $SYSTEM/priv-app/stats
-		rm -rf $SYSTEM/priv-app/crDroidMusic
-		rm -rf $SYSTEM/app/Music
-		rm -rf $SYSTEM/app/crDroidMusic
-		rm -rf $SYSTEM/app/RetroMusicPlayer
+		rm -rf $SYSTEM/priv-app/OmniSwitch
 		rm -rf $SYSTEM/priv-app/RetroMusicPlayerPrebuilt
-		rm -rf $SYSTEM/app/RetroMusicPlayerPrebuilt
-		rm -rf $SYSTEM/app/Phonograph
-		rm -rf $SYSTEM/app/TilesWallpaper
-		rm -rf $SYSTEM/app/Email
-		rm -rf $SYSTEM/priv-app/Email
-		rm -rf $SYSTEM/app/CloudPrint
-		rm -rf $PRODUCT/priv-app/stats
-		rm -rf $PRODUCT/priv-app/SimpleGallery
-		rm -rf $PRODUCT/app/Chrome
-		rm -rf $PRODUCT/app/Abstruct
-		rm -rf $PRODUCT/priv-app/RecorderPrebuilt
-		rm -rf $PRODUCT/app/Maps
-		rm -rf $PRODUCT/app/AboutBliss
-		rm -rf $PRODUCT/app/BasicDreams
-		rm -rf $PRODUCT/app/BlissStatistics
-		rm -rf $PRODUCT/app/BookmarkProvider
-		rm -rf $PRODUCT/app/Browser
-		rm -rf $PRODUCT/app/Calendar
-		rm -rf $PRODUCT/app/Dashboard
-		rm -rf $PRODUCT/app/Email
-		rm -rf $PRODUCT/app/EmergencyInfo
-		rm -rf $PRODUCT/app/Etar
-		rm -rf $PRODUCT/app/Gallery
-		rm -rf $PRODUCT/app/Jelly
-		rm -rf $PRODUCT/app/Music
-		rm -rf $PRODUCT/app/Partnerbookmark
-		rm -rf $PRODUCT/app/PartnerBookmark
-		rm -rf $PRODUCT/app/PhotoTable
-		rm -rf $PRODUCT/app/Recorder
-		rm -rf $PRODUCT/app/RetroMusic
-		rm -rf $PRODUCT/app/SimpleGallery
-		rm -rf $PRODUCT/app/Via
-		rm -rf $PRODUCT/app/WallpaperZone
-		rm -rf $PRODUCT/app/QPGallery
-		rm -rf $PRODUCT/overlay/ChromeOverlay
-		rm -rf $PRODUCT/overlay/TelegramOverlay
-		rm -rf $PRODUCT/overlay/WhatsAppOverlay
-		rm -rf $PRODUCT/priv-app/AncientWallpaperZone
-		rm -rf $PRODUCT/priv-app/crDroidMusic
-		rm -rf $PRODUCT/priv-app/Eleven
-		rm -rf $PRODUCT/priv-app/EmergencyInfo
-		rm -rf $PRODUCT/priv-app/Gallery2
-		rm -rf $PRODUCT/priv-app/MatLog
-		rm -rf $PRODUCT/priv-app/MusicFX
-		rm -rf $PRODUCT/priv-app/OmniSwitch
-		rm -rf $PRODUCT/priv-app/SafetyHub
-		rm -rf $PRODUCT/priv-app/Snap
-		rm -rf $PRODUCT/priv-app/Tag
-		rm -rf $PRODUCT/priv-app/Via
-		rm -rf $PRODUCT/priv-app/VinylMusicPlayer
-		rm -rf $PRODUCT/app/AboutBliss
-		rm -rf $PRODUCT/app/BasicDreams
-		rm -rf $PRODUCT/app/BlissStatistics
-		rm -rf $PRODUCT/app/BookmarkProvider
-		rm -rf $PRODUCT/app/Browser
-		rm -rf $PRODUCT/app/Calendar
-		rm -rf $PRODUCT/app/Dashboard
-		rm -rf $PRODUCT/app/EasterEgg
-		rm -rf $PRODUCT/app/Email
-		rm -rf $PRODUCT/app/EmergencyInfo
-		rm -rf $PRODUCT/app/Gallery
-		rm -rf $PRODUCT/app/Jelly
-		rm -rf $PRODUCT/app/Music
-		rm -rf $PRODUCT/app/Partnerbookmark
-		rm -rf $PRODUCT/app/PartnerBookmark
-		rm -rf $PRODUCT/app/PhotoTable
-		rm -rf $PRODUCT/app/RetroMusic
-		rm -rf $PRODUCT/app/SimpleGallery
-		rm -rf $PRODUCT/app/Via
-		rm -rf $PRODUCT/app/WallpaperZone
-		rm -rf $PRODUCT/app/QPGallery
-		rm -rf $PRODUCT/overlay/ChromeOverlay
-		rm -rf $PRODUCT/overlay/TelegramOverlay
-		rm -rf $PRODUCT/overlay/WhatsAppOverlay
-		rm -rf $PRODUCT/priv-app/AncientWallpaperZone
-		rm -rf $PRODUCT/priv-app/crDroidMusic
-		rm -rf $PRODUCT/priv-app/Eleven
-		rm -rf $PRODUCT/priv-app/EmergencyInfo
-		rm -rf $PRODUCT/priv-app/Gallery2
-		rm -rf $PRODUCT/priv-app/MatLog
-		rm -rf $PRODUCT/priv-app/MusicFX
-		rm -rf $PRODUCT/priv-app/OmniSwitch
-		rm -rf $PRODUCT/priv-app/SafetyHub
-		rm -rf $PRODUCT/priv-app/Snap
-		rm -rf $PRODUCT/priv-app/Tag
-		rm -rf $PRODUCT/priv-app/Via
-		rm -rf $PRODUCT/priv-app/VinylMusicPlayer
-		rm -rf $PRODUCT/app/AboutBliss
-		rm -rf $PRODUCT/app/BasicDreams
-		rm -rf $PRODUCT/app/BlissStatistics
-		rm -rf $PRODUCT/app/BookmarkProvider
-		rm -rf $PRODUCT/app/Browser
-		rm -rf $PRODUCT/app/Calendar
-		rm -rf $PRODUCT/app/Dashboard
-		rm -rf $PRODUCT/app/Email
-		rm -rf $PRODUCT/app/EmergencyInfo
-		rm -rf $PRODUCT/app/Etar
-		rm -rf $PRODUCT/app/Gallery
-		rm -rf $PRODUCT/app/Jelly
-		rm -rf $PRODUCT/app/Music
-		rm -rf $PRODUCT/app/Partnerbookmark
-		rm -rf $PRODUCT/app/PartnerBookmark
-		rm -rf $PRODUCT/app/PhotoTable
-		rm -rf $PRODUCT/app/QtiSoundRecorder
-		rm -rf $PRODUCT/app/RetroMusic
-		rm -rf $PRODUCT/app/SimpleGallery
-		rm -rf $PRODUCT/app/Via
-		rm -rf $PRODUCT/app/WallpaperZone
-		rm -rf $PRODUCT/app/QPGallery
-		rm -rf $PRODUCT/overlay/ChromeOverlay
-		rm -rf $PRODUCT/overlay/TelegramOverlay
-		rm -rf $PRODUCT/overlay/WhatsAppOverlay
-		rm -rf $PRODUCT/priv-app/AncientWallpaperZone
-		rm -rf $PRODUCT/priv-app/crDroidMusic
-		rm -rf $PRODUCT/priv-app/Eleven
-		rm -rf $PRODUCT/priv-app/EmergencyInfo
-		rm -rf $PRODUCT/priv-app/Gallery2
-		rm -rf $PRODUCT/priv-app/MatLog
-		rm -rf $PRODUCT/priv-app/MusicFX
-		rm -rf $PRODUCT/priv-app/OmniSwitch
-		rm -rf $PRODUCT/priv-app/SafetyHub
-		rm -rf $PRODUCT/priv-app/Snap
-		rm -rf $PRODUCT/priv-app/Tag
-		rm -rf $PRODUCT/priv-app/Via
-		rm -rf $PRODUCT/priv-app/VinylMusicPlayer
-		rm -rf $PRODUCT/priv-app/TipsPrebuilt
-		rm -rf $PRODUCT/app/Drive
-		rm -rf $PRODUCT/app/WallpapersBReel2020
-		rm -rf $PRODUCT/priv-app/AncientWallpaperZone
-		rm -rf $PRODUCT/priv-app/ViaBrowser
-		rm -rf $PRODUCT/priv-app/HotwordEnrollmentOKGoogleHEXAGON
-		rm -rf $PRODUCT/priv-app/HotwordEnrollmentXGoogleHEXAGON
-		rm -rf $PRODUCT/app/WallpapersBReel2020a
-		rm -rf $PRODUCT/app/Jelly
-		rm -rf $PRODUCT/priv-app/GoogleRestore
-		rm -rf $PRODUCT/app/Tycho
-		rm -rf $PRODUCT/app/GalleryGoPrebuilt
-		rm -rf $PRODUCT/app/Photos
-		rm -rf $PRODUCT/app/Gallery2
-		rm -rf $PRODUCT/priv-app/Gallery2
-		rm -rf $PRODUCT/app/crDroidMusic
-		rm -rf $PRODUCT/priv-app/crDroidMusic
-		rm -rf $PRODUCT/app/RetroMusicPlayer
-		rm -rf $PRODUCT/priv-app/RetroMusicPlayer
-		rm -rf $PRODUCT/priv-app/Email
-		rm -rf $PRODUCT/app/Bromite
-		rm -rf $PRODUCT/app/Email
-		rm -rf $PRODUCT/app/Exchange2
-		rm -rf $PRODUCT/app/Calendar
-		rm -rf $PRODUCT/app/YouTube
-		rm -rf $PRODUCT/priv-app/WellbeingPrebuilt
-		rm -rf $PRODUCT/priv-app/Wellbeing
-		rm -rf $PRODUCT/priv-app/SafetyHubPrebuilt
-		rm -rf $PRODUCT/priv-app/AndroidMigratePrebuilt
-		rm -rf $PRODUCT/priv-app/AndroidAutoStub
-		rm -rf $PRODUCT/priv-app/AndroidAutoStubPrebuilt
-		rm -rf $PRODUCT/app/ExactCalculator
-		rm -rf $PRODUCT/priv-app/DuckDuckGo
-		rm -rf $PRODUCT/priv-app/SimpleCalendar
-		rm -rf $SYSTEM_EXT/priv-app/AudioFX
-		rm -rf $SYSTEM_EXT/app/EmergencyInfo
-		rm -rf $SYSTEM_EXT/priv-app/Gallery2
-		rm -rf $SYSTEM_EXT/priv-app/Snap
-		rm -rf $PRODUCT/app/GrapheneCamera
-		rm -rf $PRODUCT/app/OPWidget
-		rm -rf $PRODUCT/app/Videos
-		rm -rf $PRODUCT/app/YouTubeMusicPrebuilt
-		rm -rf $SYSTEM_EXT/priv-app/MatLog
-		rm -rf $PRODUCT/priv-app/SetupWizardPrebuilt
-		rm -rf $SYSTEM_EXT/priv-app/SetupWizard
-		rm -rf $SYSTEM_EXT/priv-app/PixelSetupWizard
-		rm -rf $PRODUCT/priv-app/SetupWizardPrebuilt
-		rm -rf $PRODUCT/priv-app/PixelSetupWizard
-		rm -rf $SYSTEM_EXT/priv-app/SetupWizard
 		rm -rf $SYSTEM/priv-app/SetupWizard
-		rm -rf $PRODUCT/priv-app/SetupWizardPrebuilt
-		rm -rf $PRODUCT/priv-app/SetupWizard
-		rm -rf $SYSTEM_EXT/priv-app/SetupWizard
-		rm -rf $PRODUCT/priv-app/SetupWizard
-		rm -rf $SYSTEM_EXT/priv-app/SetupWizard
+		rm -rf $SYSTEM/priv-app/Snap
+		rm -rf $SYSTEM/priv-app/Tag
+		rm -rf $SYSTEM/priv-app/Velvet
+		rm -rf $SYSTEM/priv-app/Via
+		rm -rf $SYSTEM/priv-app/VinylMusicPlayer
+		rm -rf $SYSTEM/priv-app/WellbeingPrebuilt
+		rm -rf $SYSTEM/priv-app/arcore
+		rm -rf $SYSTEM/priv-app/crDroidMusic
+		rm -rf $SYSTEM/priv-app/stats
+		rm -rf $SYSTEM_EXT/app/EmergencyInfo
+		rm -rf $SYSTEM_EXT/app/FM2
+		rm -rf $SYSTEM_EXT/app/Papers
+		rm -rf $SYSTEM_EXT/app/Photos
+		rm -rf $SYSTEM_EXT/app/Superiorwalls
+		rm -rf $SYSTEM_EXT/priv-app/AndroidAutoStubPrebuilt
+		rm -rf $SYSTEM_EXT/priv-app/AudioFX
+		rm -rf $SYSTEM_EXT/priv-app/EmergencyInfo
+		rm -rf $SYSTEM_EXT/priv-app/FM2
+		rm -rf $SYSTEM_EXT/priv-app/Gallery2
+		rm -rf $SYSTEM_EXT/priv-app/GoogleRestore
+		rm -rf $SYSTEM_EXT/priv-app/Leaflet
+		rm -rf $SYSTEM_EXT/priv-app/MatLog
+		rm -rf $SYSTEM_EXT/priv-app/Music
 		rm -rf $SYSTEM_EXT/priv-app/PixelSetupWizard
+		rm -rf $SYSTEM_EXT/priv-app/SetupWizard
+		rm -rf $SYSTEM_EXT/priv-app/Snap
+		rm -rf $SYSTEM_EXT/priv-app/Updates
+		rm -rf $SYSTEM_EXT/priv-app/WellbeingPrebuilt
+		rm -rf $SYSTEM_EXT/priv-app/PixelSetupWizard
+		rm -rf $PRODUCT/app/GalleryGo
 		sleep 2.0
 	fi
 	set_progress 0.30
