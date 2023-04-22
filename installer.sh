@@ -213,12 +213,16 @@ debloater() {
 		#rm -rf $SYSTEM/priv-app/Music
 		#rm -rf $SYSTEM/priv-app/Weather
 		rm -rf $PRODUCT/app/AiAsstVision
+		rm -rf $PRODUCT/app/AiasstVision_L2
 		rm -rf $PRODUCT/app/AndroidAutoStub
 		rm -rf $PRODUCT/app/Backup
+		rm -rf $PRODUCT/app/CalendarGoogle
 		rm -rf $PRODUCT/app/CarWith
 		rm -rf $PRODUCT/app/Chrome
 		rm -rf $PRODUCT/app/Chrome-Stub
+		rm -rf $PRODUCT/app/Chrome64
 		rm -rf $PRODUCT/app/CloudBackup
+		rm -rf $PRODUCT/app/CloudService
 		rm -rf $PRODUCT/app/DevicePolicyPrebuilt
 		rm -rf $PRODUCT/app/EmergencyInfo
 		rm -rf $PRODUCT/app/FM
@@ -229,26 +233,41 @@ debloater() {
 		rm -rf $PRODUCT/app/GoogleOne
 		rm -rf $PRODUCT/app/GoogleOneTimeInitializer
 		rm -rf $PRODUCT/app/GooglePay
+		rm -rf $PRODUCT/app/GooglePrintRecommendationService
 		rm -rf $PRODUCT/app/GoogleRestore
 		rm -rf $PRODUCT/app/GoogleTTS
-		rm -rf $PRODUCT/app/HybridAccessory
-		rm -rf $PRODUCT/app/HybridPlatform
+		rm -rf $PRODUCT/app/MIDrop
 		rm -rf $PRODUCT/app/MINextpay
 		rm -rf $PRODUCT/app/MITSMClient
 		rm -rf $PRODUCT/app/MIUIAiasstService
 		rm -rf $PRODUCT/app/MIUICloudService
+		rm -rf $PRODUCT/app/MIUICloudServiceGlobal
+		rm -rf $PRODUCT/app/MIUICompass
+		rm -rf $PRODUCT/app/MIUICompassGlobal
 		rm -rf $PRODUCT/app/MIUIMiCloudSync
+		rm -rf $PRODUCT/app/MIUINotes
 		rm -rf $PRODUCT/app/MIUIReporter
 		rm -rf $PRODUCT/app/MIUISecurityInputMethod
 		rm -rf $PRODUCT/app/MIUISuperMarket
 		rm -rf $PRODUCT/app/MIpay
 		rm -rf $PRODUCT/app/Maps
 		rm -rf $PRODUCT/app/MiBugReport
+		rm -rf $PRODUCT/app/MiCloudSync
+		rm -rf $PRODUCT/app/MiConnectService
+		rm -rf $PRODUCT/app/MiDrive
+		rm -rf $PRODUCT/app/MiGalleryLockScreenGlobalT
+		rm -rf $PRODUCT/app/MiGalleryLockscreen
+		rm -rf $PRODUCT/app/MiSound
 		rm -rf $PRODUCT/app/MiuiCit
+		rm -rf $PRODUCT/app/MiuiCompass
+		rm -rf $PRODUCT/app/MiuiReporter
 		rm -rf $PRODUCT/app/Notes
 		rm -rf $PRODUCT/app/OmniJaws
 		rm -rf $PRODUCT/app/PaymentService
+		rm -rf $PRODUCT/app/PaymentService_Global
+		rm -rf $PRODUCT/app/Photos
 		rm -rf $PRODUCT/app/PrebuiltGmail
+		rm -rf $PRODUCT/app/Reporter
 		rm -rf $PRODUCT/app/SimActivateService
 		rm -rf $PRODUCT/app/SogouInput
 		rm -rf $PRODUCT/app/SpeechServicesByGoogle
@@ -258,21 +277,44 @@ debloater() {
 		rm -rf $PRODUCT/app/VoiceTrigger
 		rm -rf $PRODUCT/app/WellbeingPrebuilt
 		rm -rf $PRODUCT/app/XPerienceWallpapers
+		rm -rf $PRODUCT/app/XiaoaiRecommendation
+		rm -rf $PRODUCT/app/YMusic
 		rm -rf $PRODUCT/app/YouTube
 		rm -rf $PRODUCT/app/aiasst_service
 		rm -rf $PRODUCT/app/arcore
-		rm -rf $PRODUCT/app/remoteSimLockAuthentication
-		rm -rf $PRODUCT/app/talkback
-		rm -rf $PRODUCT/app/uimremoteclient
-		rm -rf $PRODUCT/app/uimremoteserver
+		rm -rf $PRODUCT/app/com.google.android.modulemetadata
+		rm -rf $PRODUCT/app/com.google.mainline.adservices
+		rm -rf $PRODUCT/app/com.google.mainline.telemetry
+		rm -rf $PRODUCT/app/mi_connect_service
+		rm -rf $PRODUCT/app/mi_connect_service_t
+		rm -rf $PRODUCT/app/wps-lite
+		rm -rf $PRODUCT/data-app/BaiduIME
 		rm -rf $PRODUCT/data-app/Drive
 		rm -rf $PRODUCT/data-app/Duo
 		rm -rf $PRODUCT/data-app/GoogleNews
+		rm -rf $PRODUCT/data-app/Health
+		rm -rf $PRODUCT/data-app/MIGalleryLockscreen-T
+		rm -rf $PRODUCT/data-app/MIService
+		rm -rf $PRODUCT/data-app/MIUICompass
+		rm -rf $PRODUCT/data-app/MIUIDuokanReader
+		rm -rf $PRODUCT/data-app/MIUIEmail
+		rm -rf $PRODUCT/data-app/MIUIHuanji
+		rm -rf $PRODUCT/data-app/MIUIMiDrive
+		rm -rf $PRODUCT/data-app/MIUINewHome_Removable
+		rm -rf $PRODUCT/data-app/MIUINotes
 		rm -rf $PRODUCT/data-app/MIUISoundRecorderTargetSdk30
+		rm -rf $PRODUCT/data-app/MIUIVipAccount
+		rm -rf $PRODUCT/data-app/MIUIVirtualSim
+		rm -rf $PRODUCT/data-app/MIUIXiaoAiSpeechEngine
+		rm -rf $PRODUCT/data-app/MIUIYoupin
+		rm -rf $PRODUCT/data-app/MiShop
 		rm -rf $PRODUCT/data-app/Photos
 		rm -rf $PRODUCT/data-app/Podcasts
-		rm -rf $PRODUCT/data-app/Videos
+		rm -rf $PRODUCT/data-app/ThirdAppAssistant
+		rm -rf $PRODUCT/data-app/XMRemoteController
 		rm -rf $PRODUCT/data-app/YTMusic
+		rm -rf $PRODUCT/data-app/com.iflytek.inputmethod.miui
+		rm -rf $PRODUCT/data-app/wps-lite
 		rm -rf $PRODUCT/data-app/wps_lite
 		rm -rf $PRODUCT/priv-app/AndroidAutoStub
 		rm -rf $PRODUCT/priv-app/Backup
@@ -285,15 +327,19 @@ debloater() {
 		rm -rf $PRODUCT/priv-app/GoogleRestore
 		rm -rf $PRODUCT/priv-app/GoogleRestorePrebuilt
 		rm -rf $PRODUCT/priv-app/HelpRtcPrebuilt
-		rm -rf $PRODUCT/priv-app/HotwordEnrollment*
+		rm -rf $PRODUCT/priv-app/HotwordEnroll*
 		rm -rf $PRODUCT/priv-app/MIService
 		rm -rf $PRODUCT/priv-app/MIShare
+		rm -rf $PRODUCT/priv-app/MIShareGlobal
 		rm -rf $PRODUCT/priv-app/MIUIBrowser
 		rm -rf $PRODUCT/priv-app/MIUICloudBackup
+		rm -rf $PRODUCT/priv-app/MIUICloudBackupGlobal
 		rm -rf $PRODUCT/priv-app/MIUIMusicT
 		rm -rf $PRODUCT/priv-app/MIUIQuickSearchBox
 		rm -rf $PRODUCT/priv-app/MIUIVideo
 		rm -rf $PRODUCT/priv-app/MIUIYellowPage
+		rm -rf $PRODUCT/priv-app/MIUIYellowPageGlobal
+		rm -rf $PRODUCT/priv-app/MiBrowserGlobal
 		rm -rf $PRODUCT/priv-app/Notes
 		rm -rf $PRODUCT/priv-app/NovaBugreportWrapper
 		rm -rf $PRODUCT/priv-app/Velvet
@@ -324,7 +370,6 @@ debloater() {
 		rm -rf $SYSTEM/app/Compass
 		rm -rf $SYSTEM/app/CompassGlobalStub
 		rm -rf $SYSTEM/app/CovenantBR
-		rm -rf $SYSTEM/app/EasterEgg
 		rm -rf $SYSTEM/app/Email
 		rm -rf $SYSTEM/app/EmergencyInfo
 		rm -rf $SYSTEM/app/FidoAuthen
@@ -336,8 +381,7 @@ debloater() {
 		rm -rf $SYSTEM/app/GooglePrintRecommendationService
 		rm -rf $SYSTEM/app/GoogleRestore
 		rm -rf $SYSTEM/app/Health
-		rm -rf $SYSTEM/app/HotwordEnrollmentOKGoogleWCD9340
-		rm -rf $SYSTEM/app/HotwordEnrollmentXGoogleWCD9340
+		rm -rf $SYSTEM/app/HotwordEnrollment*
 		rm -rf $SYSTEM/app/HybridAccessory
 		rm -rf $SYSTEM/app/HybridPlatform
 		rm -rf $SYSTEM/app/IdMipay
@@ -350,17 +394,19 @@ debloater() {
 		rm -rf $SYSTEM/app/MINextPay
 		rm -rf $SYSTEM/app/MIRadioGlobalBuiltin
 		rm -rf $SYSTEM/app/MIUICompassGlobal
-		rm -rf $SYSTEM/app/MIUIMusicGlobal
 		rm -rf $SYSTEM/app/MIUINotes
 		rm -rf $SYSTEM/app/MIUISecurityInputMethod
 		rm -rf $SYSTEM/app/MIUIVideoPlaye
 		rm -rf $SYSTEM/app/MIUIVideoPlayer
+		rm -rf $SYSTEM/app/MIpay
 		rm -rf $SYSTEM/app/MSA
 		rm -rf $SYSTEM/app/MSA-Global
 		rm -rf $SYSTEM/app/MiBrowserGlobal
 		rm -rf $SYSTEM/app/MiBugReport
 		rm -rf $SYSTEM/app/MiCloudSync
+		rm -rf $SYSTEM/app/MiConnectService171
 		rm -rf $SYSTEM/app/MiDrive
+		rm -rf $SYSTEM/app/MiDrop
 		rm -rf $SYSTEM/app/MiDropStub
 		rm -rf $SYSTEM/app/MiFitness
 		rm -rf $SYSTEM/app/MiGalleryLockscreen
@@ -377,10 +423,8 @@ debloater() {
 		rm -rf $SYSTEM/app/MiuiDaemon
 		rm -rf $SYSTEM/app/MiuiFreeformService
 		rm -rf $SYSTEM/app/MiuiFrequentPhrase
-		rm -rf $SYSTEM/app/MiuiGalleryGlobalExplore
 		rm -rf $SYSTEM/app/MiuiGalleryLockscreen
 		rm -rf $SYSTEM/app/MiuiPrintSpoolerBeta
-		rm -rf $SYSTEM/app/MiuiScanner
 		rm -rf $SYSTEM/app/Netflix_activation
 		rm -rf $SYSTEM/app/NextPay
 		rm -rf $SYSTEM/app/Notes
@@ -440,14 +484,12 @@ debloater() {
 		rm -rf $SYSTEM/data-app/MIMediaEditorGlobal
 		rm -rf $SYSTEM/data-app/MIUICompass
 		rm -rf $SYSTEM/data-app/MIUICompassGlobal
-		rm -rf $SYSTEM/data-app/MIUISoundRecorderTargetSdk30
-		rm -rf $SYSTEM/data-app/MIUISoundRecorderTargetSdk30Global
 		rm -rf $SYSTEM/data-app/MIUISuperMarket
 		rm -rf $SYSTEM/data-app/MiCreditInStub
 		rm -rf $SYSTEM/data-app/MiRemote
 		rm -rf $SYSTEM/data-app/ShareMe
 		rm -rf $SYSTEM/data-app/XMRemoteController
-		rm -rf $SYSTEM/etc/yellowpage
+		rm -rf $SYSTEM/data-app/yellowpage
 		rm -rf $SYSTEM/priv-app/AnalyticsCore
 		rm -rf $SYSTEM/priv-app/AndroidAutoStub
 		rm -rf $SYSTEM/priv-app/AntHalService
@@ -475,8 +517,10 @@ debloater() {
 		rm -rf $SYSTEM/priv-app/HotwordEnrollmentOKGoogleWCD9340
 		rm -rf $SYSTEM/priv-app/HotwordEnrollmentXGoogleWCD9340
 		rm -rf $SYSTEM/priv-app/MIService
+		rm -rf $SYSTEM/priv-app/MIShare
 		rm -rf $SYSTEM/priv-app/MIShareGlobal
 		rm -rf $SYSTEM/priv-app/MIUISoundRecorderTargetSdk30Global
+		rm -rf $SYSTEM/priv-app/MIUIYellowPage
 		rm -rf $SYSTEM/priv-app/MIUIYellowPageGlobal
 		rm -rf $SYSTEM/priv-app/MiBrowser
 		rm -rf $SYSTEM/priv-app/MiBrowserGlobal
@@ -496,7 +540,6 @@ debloater() {
 		rm -rf $SYSTEM/priv-app/MiuiFreeformService
 		rm -rf $SYSTEM/priv-app/MiuiHealth
 		rm -rf $SYSTEM/priv-app/MiuiMusic
-		rm -rf $SYSTEM/priv-app/MiuiScanner
 		rm -rf $SYSTEM/priv-app/MiuiVideo
 		rm -rf $SYSTEM/priv-app/MusicFX
 		rm -rf $SYSTEM/priv-app/NewHome
@@ -509,10 +552,6 @@ debloater() {
 		rm -rf $SYSTEM/priv-app/PrintRecommendationService
 		rm -rf $SYSTEM/priv-app/ProxyHandler
 		rm -rf $SYSTEM/priv-app/QuickSearchBox
-		rm -rf $SYSTEM/priv-app/ScannerGlobalStub
-		rm -rf $SYSTEM/priv-app/SoundRecorder
-		rm -rf $SYSTEM/priv-app/SoundRecorderStub
-		rm -rf $SYSTEM/priv-app/SoundRecorderTargetSdk30
 		rm -rf $SYSTEM/priv-app/Tag
 		rm -rf $SYSTEM/priv-app/Turbo
 		rm -rf $SYSTEM/priv-app/UserDictionaryProvider
@@ -529,7 +568,6 @@ debloater() {
 		rm -rf $SYSTEM/priv-app/facebook
 		rm -rf $SYSTEM/priv-app/facebook-installer
 		rm -rf $SYSTEM/priv-app/facebook-services
-		rm -rf $SYSTEM/system/product/priv-app/QtiSoundRecorder
 		rm -rf $SYSTEM/vendor/app/Joyose
 		rm -rf $SYSTEM/vendor/app/SoterService
 		rm -rf $SYSTEM/vendor/data/app/Drive
@@ -539,11 +577,15 @@ debloater() {
 		rm -rf $SYSTEM/vendor/data/app/XMRemoteController
 		rm -rf $SYSTEM/vendor/data/app/wps_lite
 		rm -rf $SYSTEM_EXT/app/FM
+		rm -rf $SYSTEM_EXT/app/FM_Test
 		rm -rf $SYSTEM_EXT/app/Papers
 		rm -rf $SYSTEM_EXT/priv-app/EmergencyInfo
+		rm -rf $SYSTEM_EXT/priv-app/EmergencyInfoGms
+		rm -rf $SYSTEM_EXT/priv-app/FMRadio
 		rm -rf $SYSTEM_EXT/priv-app/GoogleFeedback
 		rm -rf $SYSTEM_EXT/priv-app/Leaflet
 		rm -rf $SYSTEM_EXT/priv-app/MatLogrm#
+
 		#
 		#
 		#
@@ -575,50 +617,67 @@ debloater() {
 		rm -rf $SYSTEM_ROOT/my_stock/priv-app/KeKeUserCenter
 		rm -rf $SYSTEM_ROOT/my_stock/priv-app/SOSHelper
 		rm -rf $SYSTEM_ROOT/my_bigball/app/Omoji
-		rm -rf $SYSTEM_ROOT/my_product/app/HotwordEnrollment*.apk
+		rm -rf $SYSTEM_ROOT/my_product/app/HotwordEnrollment*
 		sleep 2.0
 	else
 		ui_print "* - Borrando apps en AOSP...                     *"
+		rm -rf $PRODUCT/app/AEXWallpaperStub
+		rm -rf $PRODUCT/app/ARCore
 		rm -rf $PRODUCT/app/AboutBliss
 		rm -rf $PRODUCT/app/Abstruct
+		rm -rf $PRODUCT/app/AudioRecorder
 		rm -rf $PRODUCT/app/BasicDreams
 		rm -rf $PRODUCT/app/BlissStatistics
 		rm -rf $PRODUCT/app/BookmarkProvider
 		rm -rf $PRODUCT/app/Bromite
 		rm -rf $PRODUCT/app/Browser
+		rm -rf $PRODUCT/app/Browser2
 		rm -rf $PRODUCT/app/Calendar
 		rm -rf $PRODUCT/app/Chrome
 		rm -rf $PRODUCT/app/Chrome-Stub
 		rm -rf $PRODUCT/app/Dashboard
 		rm -rf $PRODUCT/app/DevicePolicyPrebuilt
+		rm -rf $PRODUCT/app/DiagnosticsToolPrebuilt
 		rm -rf $PRODUCT/app/Drive
-		rm -rf $PRODUCT/app/EasterEgg
+		rm -rf $PRODUCT/app/Duo
 		rm -rf $PRODUCT/app/Email
 		rm -rf $PRODUCT/app/EmergencyInfo
 		rm -rf $PRODUCT/app/Etar
 		rm -rf $PRODUCT/app/ExactCalculator
 		rm -rf $PRODUCT/app/Exchange2
 		rm -rf $PRODUCT/app/FM2
+		rm -rf $PRODUCT/app/FMPlayer
 		rm -rf $PRODUCT/app/Gallery
 		rm -rf $PRODUCT/app/Gallery2
+		rm -rf $PRODUCT/app/GalleryGo
 		rm -rf $PRODUCT/app/GalleryGoPrebuilt
+		rm -rf $PRODUCT/app/Gmail2
+		rm -rf $PRODUCT/app/GoogleOne
 		rm -rf $PRODUCT/app/GoogleTTS
 		rm -rf $PRODUCT/app/GrapheneCamera
 		rm -rf $PRODUCT/app/Jelly
 		rm -rf $PRODUCT/app/Maps
 		rm -rf $PRODUCT/app/Music
-		rm -rf $PRODUCT/app/OPWidget
+		rm -rf $PRODUCT/app/Music2
 		rm -rf $PRODUCT/app/PartnerBookmark
 		rm -rf $PRODUCT/app/Partnerbookmark
 		rm -rf $PRODUCT/app/PhotoTable
 		rm -rf $PRODUCT/app/Photos
+		rm -rf $PRODUCT/app/PlayAutoInstallConfig
+		rm -rf $PRODUCT/app/PrebuiltBugle
 		rm -rf $PRODUCT/app/PrebuiltGmail
+		rm -rf $PRODUCT/app/PrebuiltKeep
 		rm -rf $PRODUCT/app/QPGallery
 		rm -rf $PRODUCT/app/QtiSoundRecorder
 		rm -rf $PRODUCT/app/Recorder
 		rm -rf $PRODUCT/app/RetroMusic
 		rm -rf $PRODUCT/app/RetroMusicPlayer
+		rm -rf $PRODUCT/app/SatisPay
+		rm -rf $PRODUCT/app/SeedVault
+		rm -rf $PRODUCT/app/ShishufiedWalls
 		rm -rf $PRODUCT/app/SimpleGallery
+		rm -rf $PRODUCT/app/SoundAmplifierPrebuilt
+		rm -rf $PRODUCT/app/SpeechServicesByGoogle
 		rm -rf $PRODUCT/app/Tycho
 		rm -rf $PRODUCT/app/Velvet
 		rm -rf $PRODUCT/app/Via
@@ -628,28 +687,40 @@ debloater() {
 		rm -rf $PRODUCT/app/WallpapersBReel2020a
 		rm -rf $PRODUCT/app/WellbeingPrebuilt
 		rm -rf $PRODUCT/app/XPerienceWallpapers
+		rm -rf $PRODUCT/app/YTMusic
+		rm -rf $PRODUCT/app/YTMusicSetupWizard
 		rm -rf $PRODUCT/app/YouTube
 		rm -rf $PRODUCT/app/YouTubeMusicPrebuilt
 		rm -rf $PRODUCT/app/arcore
+		rm -rf $PRODUCT/app/com.google.mainline.adservices
+		rm -rf $PRODUCT/app/com.google.mainline.telemetry
 		rm -rf $PRODUCT/app/crDroidMusic
+		rm -rf $PRODUCT/app/facebook-appmanager
 		rm -rf $PRODUCT/app/talkback
 		rm -rf $PRODUCT/overlay/ChromeOverlay
 		rm -rf $PRODUCT/overlay/TelegramOverlay
 		rm -rf $PRODUCT/overlay/WhatsAppOverlay
+		rm -rf $PRODUCT/priv-app/AmazonAppManager
 		rm -rf $PRODUCT/priv-app/AncientWallpaperZone
 		rm -rf $PRODUCT/priv-app/AndroidAutoStub
 		rm -rf $PRODUCT/priv-app/AndroidAutoStubPrebuilt
 		rm -rf $PRODUCT/priv-app/AndroidMigratePrebuilt
+		rm -rf $PRODUCT/priv-app/AudioFx_v2
 		rm -rf $PRODUCT/priv-app/Chrome
+		rm -rf $PRODUCT/priv-app/ChromeHomePageProvider
+		rm -rf $PRODUCT/priv-app/ClaroContenedorStub
 		rm -rf $PRODUCT/priv-app/DuckDuckGo
 		rm -rf $PRODUCT/priv-app/Eleven
 		rm -rf $PRODUCT/priv-app/Email
 		rm -rf $PRODUCT/priv-app/EmergencyInfo
 		rm -rf $PRODUCT/priv-app/FM2
+		rm -rf $PRODUCT/priv-app/FMPlayer
 		rm -rf $PRODUCT/priv-app/Gallery2
 		rm -rf $PRODUCT/priv-app/GoogleRestore
 		rm -rf $PRODUCT/priv-app/GoogleRestorePrebuilt
+		rm -rf $PRODUCT/priv-app/GuideMe
 		rm -rf $PRODUCT/priv-app/HelpRtcPrebuilt
+		rm -rf $PRODUCT/priv-app/HotwordEnrollment*
 		rm -rf $PRODUCT/priv-app/HotwordEnrollmentOKGoogleHEXAGON
 		rm -rf $PRODUCT/priv-app/HotwordEnrollmentXGoogleHEXAGON
 		rm -rf $PRODUCT/priv-app/MatLog
@@ -658,12 +729,15 @@ debloater() {
 		rm -rf $PRODUCT/priv-app/OmniSwitch
 		rm -rf $PRODUCT/priv-app/PixelLiveWallpaperPrebuilt
 		rm -rf $PRODUCT/priv-app/PixelSetupWizard
+		rm -rf $PRODUCT/priv-app/PrebuiltBugle
 		rm -rf $PRODUCT/priv-app/QtiSoundRecorder
 		rm -rf $PRODUCT/priv-app/RecorderPrebuilt
 		rm -rf $PRODUCT/priv-app/RetroMusicPlayer
 		rm -rf $PRODUCT/priv-app/SafetyHub
 		rm -rf $PRODUCT/priv-app/SafetyHubPrebuilt
 		rm -rf $PRODUCT/priv-app/ScribePrebuilt
+		rm -rf $PRODUCT/priv-app/SecurityHubPrebuilt
+		rm -rf $PRODUCT/priv-app/SeedVault
 		rm -rf $PRODUCT/priv-app/SetupWizard
 		rm -rf $PRODUCT/priv-app/SetupWizardPrebuilt
 		rm -rf $PRODUCT/priv-app/SimpleCalendar
@@ -676,10 +750,14 @@ debloater() {
 		rm -rf $PRODUCT/priv-app/ViaBrowser
 		rm -rf $PRODUCT/priv-app/VinylMusicPlayer
 		rm -rf $PRODUCT/priv-app/Wellbeing
+		rm -rf $PRODUCT/priv-app/WellbeingPreBuilt
 		rm -rf $PRODUCT/priv-app/WellbeingPrebuilt
 		rm -rf $PRODUCT/priv-app/arcore
 		rm -rf $PRODUCT/priv-app/crDroidMusic
+		rm -rf $PRODUCT/priv-app/facebook-installer
+		rm -rf $PRODUCT/priv-app/facebook-services
 		rm -rf $PRODUCT/priv-app/stats
+		rm -rf $SYSTEM/app/AEXPapers
 		rm -rf $SYSTEM/app/AbleMusic
 		rm -rf $SYSTEM/app/Abstruct
 		rm -rf $SYSTEM/app/Aves
@@ -688,28 +766,37 @@ debloater() {
 		rm -rf $SYSTEM/app/BlissUpdater
 		rm -rf $SYSTEM/app/BookmarkProvider
 		rm -rf $SYSTEM/app/Browser
+		rm -rf $SYSTEM/app/Bug2GoStub
+		rm -rf $SYSTEM/app/BuiltInPrintService
 		rm -rf $SYSTEM/app/Chromium
 		rm -rf $SYSTEM/app/CloudPrint
 		rm -rf $SYSTEM/app/ColtPapers
 		rm -rf $SYSTEM/app/DuckDuckGo
+		rm -rf $SYSTEM/app/Duckduckgo
 		rm -rf $SYSTEM/app/EggGame
 		rm -rf $SYSTEM/app/Email
 		rm -rf $SYSTEM/app/Exchange2
 		rm -rf $SYSTEM/app/FM2
+		rm -rf $SYSTEM/app/FMRadioService
 		rm -rf $SYSTEM/app/Gallery
+		rm -rf $SYSTEM/app/GooglePrintRecommendationService
 		rm -rf $SYSTEM/app/GugelClock
 		rm -rf $SYSTEM/app/Jelly
 		rm -rf $SYSTEM/app/Kiwi
 		rm -rf $SYSTEM/app/MiXplorer
 		rm -rf $SYSTEM/app/Music
+		rm -rf $SYSTEM/app/MusicPlayerGO
 		rm -rf $SYSTEM/app/PartnerBookmark
 		rm -rf $SYSTEM/app/Partnerbookmark
 		rm -rf $SYSTEM/app/Phonograph
 		rm -rf $SYSTEM/app/PhotoTable
+		rm -rf $SYSTEM/app/PrintRecommendationService
+		rm -rf $SYSTEM/app/PrintSpooler
 		rm -rf $SYSTEM/app/QPGallery
 		rm -rf $SYSTEM/app/RetroMusic
 		rm -rf $SYSTEM/app/RetroMusicPlayer
 		rm -rf $SYSTEM/app/RetroMusicPlayerPrebuilt
+		rm -rf $SYSTEM/app/SeedVault
 		rm -rf $SYSTEM/app/SimpleCalendar
 		rm -rf $SYSTEM/app/SimpleGallery
 		rm -rf $SYSTEM/app/StagWalls
@@ -723,9 +810,12 @@ debloater() {
 		rm -rf $SYSTEM/app/Yunikon
 		rm -rf $SYSTEM/app/arcore
 		rm -rf $SYSTEM/app/crDroidMusic
+		rm -rf $SYSTEM/app/facebook-appmanager
 		rm -rf $SYSTEM/priv-app/AudioFX
 		rm -rf $SYSTEM/priv-app/BlissUpdater
 		rm -rf $SYSTEM/priv-app/Calendar
+		rm -rf $SYSTEM/priv-app/DigitalWellbeing
+		rm -rf $SYSTEM/priv-app/EasySetup
 		rm -rf $SYSTEM/priv-app/Eleven
 		rm -rf $SYSTEM/priv-app/Email
 		rm -rf $SYSTEM/priv-app/FM2
@@ -734,7 +824,11 @@ debloater() {
 		rm -rf $SYSTEM/priv-app/MetroMusicPlayer
 		rm -rf $SYSTEM/priv-app/MusicFX
 		rm -rf $SYSTEM/priv-app/OmniSwitch
+		rm -rf $SYSTEM/priv-app/OneDrive_Samsung_v3
 		rm -rf $SYSTEM/priv-app/RetroMusicPlayerPrebuilt
+		rm -rf $SYSTEM/priv-app/SamsungCloudClient
+		rm -rf $SYSTEM/priv-app/SeedVault
+		rm -rf $SYSTEM/priv-app/Seedvault
 		rm -rf $SYSTEM/priv-app/SetupWizard
 		rm -rf $SYSTEM/priv-app/Snap
 		rm -rf $SYSTEM/priv-app/Tag
@@ -746,12 +840,17 @@ debloater() {
 		rm -rf $SYSTEM/priv-app/crDroidMusic
 		rm -rf $SYSTEM/priv-app/stats
 		rm -rf $SYSTEM_EXT/app/EmergencyInfo
+		rm -rf $SYSTEM_EXT/app/EmergencyInfoGoogleNoUi
 		rm -rf $SYSTEM_EXT/app/FM2
+		rm -rf $SYSTEM_EXT/app/FMRadioService
 		rm -rf $SYSTEM_EXT/app/Papers
 		rm -rf $SYSTEM_EXT/app/Photos
+		rm -rf $SYSTEM_EXT/app/PrebuiltBugle
+		rm -rf $SYSTEM_EXT/app/SeedVault
 		rm -rf $SYSTEM_EXT/app/Superiorwalls
 		rm -rf $SYSTEM_EXT/priv-app/AndroidAutoStubPrebuilt
 		rm -rf $SYSTEM_EXT/priv-app/AudioFX
+		rm -rf $SYSTEM_EXT/priv-app/ChromeHomePageProvider
 		rm -rf $SYSTEM_EXT/priv-app/EmergencyInfo
 		rm -rf $SYSTEM_EXT/priv-app/FM2
 		rm -rf $SYSTEM_EXT/priv-app/Gallery2
@@ -760,12 +859,13 @@ debloater() {
 		rm -rf $SYSTEM_EXT/priv-app/MatLog
 		rm -rf $SYSTEM_EXT/priv-app/Music
 		rm -rf $SYSTEM_EXT/priv-app/PixelSetupWizard
+		rm -rf $SYSTEM_EXT/priv-app/SeedVault
+		rm -rf $SYSTEM_EXT/priv-app/Seedvault
 		rm -rf $SYSTEM_EXT/priv-app/SetupWizard
 		rm -rf $SYSTEM_EXT/priv-app/Snap
 		rm -rf $SYSTEM_EXT/priv-app/Updates
 		rm -rf $SYSTEM_EXT/priv-app/WellbeingPrebuilt
-		rm -rf $SYSTEM_EXT/priv-app/PixelSetupWizard
-		rm -rf $PRODUCT/app/GalleryGo
+
 		sleep 2.0
 	fi
 	set_progress 0.30
@@ -882,7 +982,7 @@ pre_swizard() {
 					rm -rf $PRODUCT/priv-app/DevicePersonalizationPrebuiltPixel2021
 				fi
 			}
-			fixrice
+			#fixrice
 		fi
 		if [ "$android_sdk" = 33 ]; then
 			rm -rf $PRODUCT/overlay/TheGapps-Provision.apk
@@ -1289,11 +1389,11 @@ herramientas
 pre_swizard
 files
 swizard
-pl
+#pl
 if [ -e $SYSTEM_ROOT/my_stock ]; then
 	desmontar_sistema
 else
-	gboard
+	#gboard
 	desmontar_sistema
 fi
 set_progress 1.00

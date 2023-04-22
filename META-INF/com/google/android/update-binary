@@ -38,7 +38,7 @@ ui_print "*     |   O O-o  O--o  |    |   | o---o  |       *";
 ui_print "*     |  /  |    |   | |    o   o |   |  |       *";
 ui_print "*     o-o   o--o o--o  O---o o-o  o   o  o       *";
 ui_print "*     --------------------------------------     *";
-ui_print "*              Version 6 | @apmods               *";
+ui_print "*              Version 7 | @apmods               *";
 ui_print "**************************************************";
 ui_print "*                                                *";
 ui_print "*         Diman Ap on Spotify - Followme         *";
