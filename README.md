@@ -1,4 +1,4 @@
-# Debloat Universal v9
+# Debloat Universal for Recovery
 
 Elimina aplicaciones Android desde tu recovery personalizado que son poco utilizadas o basura de tu ROM basada en AOSP/MIUI y dejala más liviana y optimizada
 
