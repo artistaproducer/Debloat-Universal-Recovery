@@ -6,7 +6,7 @@ ruta = os.path.dirname(os.path.abspath(__file__))
 # Recorrer todos los archivos en el directorio
 for nombre_archivo in os.listdir(ruta):
     # Verificar que el archivo es un archivo de texto
-    if nombre_archivo.endswith('.sh'):
+    if nombre_archivo.endswith('.mod'):
         # Leer el archivo
         with open(os.path.join(ruta, nombre_archivo), 'r') as archivo:
             lineas = archivo.readlines()

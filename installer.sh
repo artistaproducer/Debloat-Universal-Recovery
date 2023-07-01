@@ -896,7 +896,12 @@ debloater() {
 	set_progress 0.30
 }
 photo() {
-	#rm -rf $PRODUCT/etc/sysconfig/nexus.xml
+		# Verifica si existe el archivo google_elite_configs.xml en la partición de product y lo elimina
+	if [ -e $PRODUCT/etc/sysconfig/google_elite_configs.xml ]; then
+		rm -rf $PRODUCT/etc/sysconfig/google_elite_configs.xml
+	else
+		rm -rf $REMOVER_PR/etc/sysconfig/google_elite_configs.xml
+	fi
 	rm -rf $PRODUCT/etc/sysconfig/Notice
 	rm -rf $PRODUCT/etc/sysconfig/Shift.xml
 	rm -rf $PRODUCT/etc/sysconfig/google_exclusives_enable.xml
@@ -965,13 +970,6 @@ herramientas() {
 		fi
 	else
 		echo "$a is odd number"
-	fi
-
-	# Verifica si existe el archivo google_elite_configs.xml en la partición de product y lo elimina
-	if [ -e $PRODUCT/etc/sysconfig/google_elite_configs.xml ]; then
-		rm -rf $PRODUCT/etc/sysconfig/google_elite_configs.xml
-	else
-		rm -rf $REMOVER_PR/etc/sysconfig/google_elite_configs.xml
 	fi
 
 	sleep 0.2
@@ -1281,6 +1279,7 @@ pl() {
 	rm -rf $SYSTEM/*pp/LatinIMEGooglePrebuilt
 	rm -rf $SYSTEM_EXT/*pp/LatinIMEGooglePrebuilt
 	rm -rf $PRODUCT/*pp/gboardlite_apmods
+	rm -rf $SYSTEM/*pp/gboardlite_apmods
 	rm -rf $SYSTEM_ROOT/my*/*pp/LatinImeGoogle
 
 	# Extrae los archivos y directorios necesarios para Gboard Lite desde el archivo SDKG.tar.xz al directorio temporal
@@ -1291,11 +1290,11 @@ pl() {
 
 	# Comprueba si es ARMv7
 	if [ "$arch" = "armv7l" ]; then
-		ui_print "* - El dispositivo es ARMv7                      *"
+		ui_print "* - Instalando gboard version ARMv7              *"
 		# Elimina el archivo base64.apk en caso de ser necesario para ARMv7
 		rm -r $REMOVER_SYS/*pp/gboardlite_apmods/base64.apk
 	elif [ "$arch" = "aarch64" ]; then
-		ui_print "* - El dispositivo es ARMv8                      *"
+		ui_print "* - Instalando gboard version ARMv8              *"
 		# Elimina el archivo base32.apk en caso de ser necesario para ARMv8 (aarch64)
 		rm -r $REMOVER_SYS/*pp/gboardlite_apmods/base32.apk
 	fi
