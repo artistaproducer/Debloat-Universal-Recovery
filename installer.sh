@@ -1437,9 +1437,9 @@ herramientas
 pre_swizard
 files
 swizard
-#pl
-#gboard
-#getDiman
+pl
+gboard
+getDiman
 #fixrice
 desmontar_sistema
 set_progress 1.00
