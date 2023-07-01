@@ -1,33 +1,30 @@
 #!/sbin/sh
-#
-###########################################
-# File Name: update-binary
-# Last Updated: 2020, May 26
-###########################################
-##
 
+# Se establecen algunas variables de entorno que se utilizarán a lo largo del script
 export ZIPFILE="$3"
 export OUTFD="/proc/self/fd/$2"
 export TMP="/tmp"
 
+# Se verifica la arquitectura del dispositivo y se establece una variable BINARCH en consecuencia
 case "$(uname -m)" in
-  *86*) export BINARCH="x86";; # e.g. Zenfone is i686
-  *ar*) export BINARCH="arm";; # i.e. armv7l and aarch64
+  *86*) export BINARCH="x86";; # Dispositivos x86 (como algunos emuladores de Android) 
+  *ar*) export BINARCH="arm";; # Dispositivos ARM (como la mayoría de los teléfonos y tabletas Android)
 esac
 
-bb="$TMP/busybox-$BINARCH"
-l="$TMP/bin"
-
+# Se establece la política de SELinux en modo Permisivo para evitar problemas de permisos
 setenforce 0
 
+# La función "ui_print()" se utiliza para imprimir mensajes en la pantalla del dispositivo durante la instalación
 ui_print() {
   echo "ui_print $1" > "$OUTFD";
   echo "ui_print" > "$OUTFD";
 }
 
+# La función "set_progress()" se utiliza para establecer el progreso de la instalación en la pantalla del dispositivo
 set_progress() { echo "set_progress $1" > "$OUTFD"; }
 
 #################
+# Se establece un mensaje de bienvenida que se imprimirá en la pantalla del dispositivo
 set_progress 0.10;
 ui_print " ";
 ui_print "**************************************************";
@@ -38,15 +35,15 @@ ui_print "*     |   O O-o  O--o  |    |   | o---o  |       *";
 ui_print "*     |  /  |    |   | |    o   o |   |  |       *";
 ui_print "*     o-o   o--o o--o  O---o o-o  o   o  o       *";
 ui_print "*     --------------------------------------     *";
-ui_print "*              Version 7 | @apmods               *";
+ui_print "*             Version 8.6 | @apmods              *";
 ui_print "**************************************************";
 ui_print "*                                                *";
 ui_print "*         Diman Ap on Spotify - Followme         *";
 ui_print "*                                                *";
 ui_print "**************************************************";
-sleep 4.0
+sleep 0.5
 
-
+# En la siguiente sección, se extraen algunos archivos necesarios del archivo zip y se les da permisos de ejecución.
 for f in busybox-arm e2fsck installer.sh resize2fs; do
   unzip -o "$ZIPFILE" "$f" -d "$TMP";
 done
@@ -55,13 +52,17 @@ for f in busybox-arm e2fsck installer.sh resize2fs; do
   chmod +x "$TMP/$f";
 done
 
-# Preparing
+# Preparación
+# Se establece el progreso de la instalación en 20% y se verifica si se ha instalado una versión anterior de BusyBox en el dispositivo.
+# Si es así, se crea un enlace simbólico entre los binarios de BusyBox y un directorio temporal.
 set_progress 0.20;
 if [ -e "$bb" ]; then
+  bb="$TMP/busybox-$BINARCH"
+  l="$TMP/bin"
   install -d "$l"
   for i in $($bb --list); do
     if ! ln -sf "$bb" "$l/$i" && ! $bb ln -sf "$bb" "$l/$i" && ! $bb ln -f "$bb" "$l/$i" ; then
-      # create script wrapper if symlinking and hardlinking failed because of restrictive selinux policy
+      # Si no se pueden crear los enlaces simbólicos, se crea un script envoltorio para cada binario de BusyBox.
       if ! echo "#!$bb" > "$l/$i" || ! chmod +x "$l/$i" ; then
         ui_print "ERROR 10: Failed to set-up pre-bundled busybox";
         exit 1
@@ -72,6 +73,8 @@ else
   exit 1
 fi
 
+# Se actualiza el PATH para incluir el directorio temporal que contiene los binarios de BusyBox, y se ejecuta el archivo "installer.sh"
+# que contiene la lógica de instalación real.
 PATH="$l:$PATH" $bb ash "$TMP/installer.sh" "$@"
   exit "$?"
 else
@@ -80,3 +83,8 @@ else
 fi
 
 ## Finished
+
+# Se comprueba la salida del archivo "installer.sh" y se establece el código de salida para que coincida.
+# Si todo ha ido bien, el script termina con éxito. Si no, se imprimeun mensaje de error en la pantalla del dispositivo.
+
+Espero que esto te haya ayudado a entender mejor el código del script. Si tienes alguna otra pregunta, no dudes en preguntar.
