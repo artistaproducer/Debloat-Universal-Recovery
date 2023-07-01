@@ -1427,7 +1427,6 @@ getDiman() {
 	rm -rf $PRODUCT/*pp/*Camera*
 	rm -rf $SYSTEM/*pp/*Camera*
 }
-
 creando_tmp
 montando_sistema
 android_version
